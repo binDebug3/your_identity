@@ -24,6 +24,8 @@ import numpy as np
 
 # Load the pre-trained face detection classifier
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+with open("counter.txt") as file:
+    counter = int(file.read())
 
 # Create a VideoCapture object to access the camera
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
@@ -65,3 +67,10 @@ cap.release()
 
 # Destroy all windows
 cv2.destroyAllWindows()
+# Save the captured frame to a file
+cv2.imwrite(f'images/image{counter}.jpg', frame)
+
+counter += 1
+
+with open("counter.txt", "w+") as file:
+    file.write(str(counter))
