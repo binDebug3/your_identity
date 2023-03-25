@@ -1,8 +1,20 @@
 import openai
 openai.api_key = "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" # replace with your API key
 
+from random import choice
+prompts = [
+    "when <name> was <age> years old and the paparazzi confused <name> with <celeb>"
+]
+
+def generate_prompt(name, age, celeb):
+    prompt = choice(prompts)
+    
+    prompt = prompt.replace("<name>", name).replace("<age>", age).replace("<celeb>", celeb)
+    
+    return prompt
+
 def makeString(name = "", age = "", celeb = ""):
-    return f"when {name} was {age} years old and the paparazzi confused {name} with {celeb}"
+    return generate_prompt(name, age, celeb)
 
 def generate_paragraph(input_string):
     prompt = f"Please write a funny story about the time {input_string}."
