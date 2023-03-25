@@ -2,6 +2,8 @@ import cv2
 import tkinter as tk
 from PIL import Image, ImageTk
 
+temp_img_path = "./images/iron_man.jpeg"
+
 class App:
     def __init__(self, window, window_title):
         self.window = window
@@ -16,7 +18,7 @@ class App:
         self.canvas.pack(side=tk.LEFT)
         
         # Load and display the image
-        self.image = Image.open("images/image1.png")
+        self.image = Image.open(temp_img_path)
         self.photo = ImageTk.PhotoImage(self.image)
         self.image_label = tk.Label(window, image=self.photo)
         self.image_label.pack(side=tk.RIGHT)
@@ -36,8 +38,10 @@ class App:
         ret, frame = self.cap.read()
         
         if ret:
-            self.photo = ImageTk.PhotoImage(image = Image.fromarray(frame))
-            self.canvas.create_image(0, 0, image = self.photo, anchor = tk.NW)
+            photo = ImageTk.PhotoImage(image = Image.fromarray(frame))
+            self.canvas.create_image(0, 0, image = photo, anchor = tk.NW)
+            
+        self.canvas.create_image(0, 0, image = self.photo, anchor=tk.NE)
         
         self.window.after(self.delay, self.update)
     
