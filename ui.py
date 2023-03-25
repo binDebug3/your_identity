@@ -6,7 +6,14 @@ from copy import deepcopy
 from facial_recognition import get_celebrity
 from voice_interface import speak, mic_input
 import numpy as np
-from get_face import age_gender_detector
+from get_face import age_gender_detector, emotion_detector
+
+from os.path import exists
+
+if exists("/d/AlexWork"):
+    jeffs_cpu = True
+else:
+    jeffs_cpu = False
 
 temp_img_path = "./images/iron_man.jpeg"
 
@@ -178,9 +185,17 @@ class App:
             
             speak("Hello, my name is Aden Tee.")
             
-            
-            reply = mic_input(prompt="What is your name?")
-            self.name = reply.split()[-1]
+            # keep asking for name until it works haha
+            while True:
+                try:
+                    reply = mic_input(prompt="What is your name?")
+                    self.name = reply.split()[-1]
+                except Exception as e:
+                    speak("Try saying that again like this: My name is Aden Tee")
+                    continue
+                else:
+                    break
+                
             
             self.phase = GET_CELEBRITY_PHASE
             
@@ -302,13 +317,17 @@ class App:
             
             speak("I will now analyze your face to predict your gender, age, and mood.")
             
-            gender, gender_confidence, age, age_confidene, emotion, emotion_confidence = age_gender_detector(self.image_for_info)
+            gender, gender_confidence, age, age_confidene = age_gender_detector(self.image_for_info)
             self.gender = gender
             self.gender_confidence = int(gender_confidence * 100)
             self.age = age
             self.age_confidene = int(age_confidene * 100)
-            self.emotion = emotion
-            self.emotion_confidence = emotion_confidence
+            
+            if not jeffs_cpu:
+                emotion, emotion_confidence = emotion_detector(self.image_for_info)
+                
+                self.emotion = emotion
+                self.emotion_confidence = emotion_confidence
             
             print(gender, gender_confidence, age, age_confidene)
             
@@ -333,9 +352,11 @@ class App:
                 f"{lower_age} and {higher_age} years old)"
             )
             
-            speak(
-                f"I am {self.emotion_confidence} percent sure that you are {self.emotion}"
-            )
+            if not jeffs_cpu:
+                
+                speak(
+                    f"I am {self.emotion_confidence} percent sure that you are {self.emotion}"
+                )
             
             self.canvas.delete('all')
             
