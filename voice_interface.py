@@ -18,7 +18,7 @@ def mic_input(prompt=None):
             if not prompt is None:
                 speak(prompt)
             
-            r.energy_threshold = 4000
+            r.energy_threshold = 3000
             print("Listening...")
             audio = r.listen(source)
 
