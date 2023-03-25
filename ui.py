@@ -6,6 +6,7 @@ from copy import deepcopy
 from facial_recognition import get_celebrity
 from voice_interface import speak, mic_input
 import numpy as np
+from get_face import age_gender_detector
 
 temp_img_path = "./images/iron_man.jpeg"
 
@@ -242,6 +243,7 @@ class App:
             # load in the current image and resize it
             curr_img = Image.open("images/curr_img.jpg")
             curr_img = curr_img.resize((self.output_width, self.output_height))
+            self.image_for_info = deepcopy(np.array(curr_img))
             
             # get the celebrity look alike
             celebrity_img, celebrity_name = get_celebrity(curr_img)
@@ -297,13 +299,44 @@ class App:
                 self.phase = GETTING_INFO_PHASE
                 
         elif self.phase == GETTING_INFO_PHASE:
-            pass
+            
+            speak("I will now analyze your face to predict your gender, age, and mood.")
+            
+            gender, gender_confidence, age, age_confidene = age_gender_detector(self.image_for_info)
+            self.gender = gender
+            self.gender_confidence = int(gender_confidence * 100)
+            self.age = age
+            self.age_confidene = int(age_confidene * 100)
+            
+            print(gender, gender_confidence, age, age_confidene)
+            
+            self.phase = SPEAKING_INFO_PHASE
         
         elif self.phase == SPEAKING_INFO_PHASE:
-            pass    
+            
+            speak("Here is my prediction")
+            
+            speak(
+                f"I am {self.gender_confidence} percent sure that you are {self.gender}"
+            )
+            
+            # remove parenthesize int he string
+            age_str = self.age[1:-1]
+            nums = list(map(int, age_str.split("-")))
+            lower_age = nums[0]
+            higher_age = nums[1]
+            
+            speak(
+                f"I am {self.age_confidene} percent sure that you are between "
+                f"{lower_age} and {higher_age} years old)"
+            )
+            
+            self.phase = SOMEONE_ELSE_PHASE
         
         elif self.phase == SOMEONE_ELSE_PHASE:
-            pass
+            
+            speak("I hope I did a good job. Someone else should try!")
+            self.phase = SHOW_ADEN_PHASE
         
         self.window.after(self.delay, self.update)
     
