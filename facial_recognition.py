@@ -85,7 +85,7 @@ class FacialRec(object):
         self.new_F = self.F - self.mu.reshape(len(self.mu), 1)
         #initailize U from la.svd
         self.U = la.svd(self.new_F, full_matrices=False)[0]
-        
+
     def project(self, A, s):
         """Project a face vector onto the subspace spanned by the first s
         eigenfaces, and represent that projection in terms of those eigenfaces.
