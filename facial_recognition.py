@@ -32,7 +32,6 @@ def get_faces(path="./celebrities/"):
                 
                 ind_name_map[i] = (fname[:-6], dirpath+"/"+fname)
                 assert os.path.exists(ind_name_map[i][1])
-                print(img.shape)
                 i += 1
                 break
     # Put all the face vectors column-wise into a matrix.

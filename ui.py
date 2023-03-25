@@ -16,8 +16,9 @@ SHOW_ADEN_PHASE = 0
 GET_NAME_PHASE = 1
 GET_CELEBRITY_PHASE = 2
 SPEAKING_CELEBRITY_PHASE = 3
+PHOTO_TRANSITION_PHASE = 3.5
 GETTING_INFO_PHASE = 4
-SPEKAING_INFO_PHASE = 5
+SPEAKING_INFO_PHASE = 5
 SOMEONE_ELSE_PHASE = 6
 
 class App:
@@ -176,7 +177,9 @@ class App:
             
             speak("Hello, my name is Aden Tee.")
             
-            self.name = mic_input(prompt="What is your name?")
+            
+            reply = mic_input(prompt="What is your name?")
+            self.name = reply.split()[-1]
             
             self.phase = GET_CELEBRITY_PHASE
             
@@ -261,22 +264,46 @@ class App:
             user_img = np.array(user_img)
             celebrity_img = np.array(celebrity_img)
             
-            transition_img = cv2.addWeighted(
-                user_img, self.transition_alpha, 
-                celebrity_img, 1-self.transition_alpha, 0
-            )
-            self.transition_image = ImageTk.PhotoImage(image = Image.fromarray(transition_img))
+            self.user_img = user_img
+            self.celebrity_img = celebrity_img
             
-                
-            # create the celebrity image (for now just ironman)
-            self.canvas.create_image(
-                self.width+self.padding*2, self.padding, 
-                image = self.transition_image, anchor=tk.NW
+            self.phase = PHOTO_TRANSITION_PHASE
+            
+        elif self.phase == PHOTO_TRANSITION_PHASE:
+            
+            transition_img = cv2.addWeighted(
+                self.user_img, (100-self.transition_alpha)/100, 
+                self.celebrity_img, (self.transition_alpha)/100, 0
             )
+            
+            self.transition_alpha += 1
+            
+            done = False
+            if self.transition_alpha > 100:
+                done = True
+                
+            if not done:
+                self.transition_image = ImageTk.PhotoImage(image = Image.fromarray(transition_img))
+                
+                    
+                # create the celebrity image (for now just ironman)
+                self.canvas.create_image(
+                    self.width+self.padding*2, self.padding, 
+                    image = self.transition_image, anchor=tk.NW
+                )
+                
+                time.sleep(0.005)
+            else:
+                self.phase = GETTING_INFO_PHASE
+                
+        elif self.phase == GETTING_INFO_PHASE:
             pass
         
+        elif self.phase == SPEAKING_INFO_PHASE:
+            pass    
         
-            
+        elif self.phase == SOMEONE_ELSE_PHASE:
+            pass
         
         self.window.after(self.delay, self.update)
     
