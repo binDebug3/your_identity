@@ -4,12 +4,14 @@ import urllib.request
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import cv2
-import time
 from PIL import Image
 
 
 class Celebrities(object):
     def __init__(self):
+        """
+        Initialize the celebrities class
+        """
         self.website = "https://www.imdb.com/list/ls058011111/?sort=list_order,asc&mode=grid&page=1"
         self.driver = webdriver.Chrome(
             executable_path=r"C:\Users\dalli\PycharmProjects\CarMarket\Casper\chromedriver_win32\chromedriver.exe")
@@ -27,12 +29,19 @@ class Celebrities(object):
         :return:
         """
         for i in range(10):
+            # update the names and links
             self.names = self.names + self.findNames()
             self.links = self.links + self.findLinks()
+
+            # visibility print
             print("Iteration: " + str(i))
             print(len(self.names))
             print(len(self.links), "\n")
+
+            # get the next page
             self.driver.get(self.getNextPage())
+
+        #
         self.driver.close()
 
 
@@ -41,6 +50,7 @@ class Celebrities(object):
         Click the next button on the page
         :return:
         """
+        # update the website page index
         nextPage = self.website
         index = -1
         while nextPage[index].isdigit():
@@ -68,6 +78,7 @@ class Celebrities(object):
         # get a list of name elements and save the text content
         nameElems = self.driver.find_elements(By.XPATH, nameClass)
 
+        # construct the list of names
         for elem in nameElems:
             names.append(elem.get_attribute('alt'))
 
@@ -85,6 +96,7 @@ class Celebrities(object):
         # get a list of name elements and save the text content
         linkElems = self.driver.find_elements(By.XPATH, linkClass)
 
+        # construct the list of links
         for elem in linkElems:
             links.append(elem.get_attribute('src'))
 
@@ -107,6 +119,7 @@ class Celebrities(object):
                 path += "/" + alt + ".jpg"
                 urllib.request.urlretrieve(self.links[i], path)
 
+
     def save_names(self):
         """
         Save the names of each celebrity
@@ -116,8 +129,8 @@ class Celebrities(object):
             for name in self.names:
                 file.write("_".join(name.split()) + "\n")
 
-# END CLASS
 
+# END CLASS
 def face_recognition(frame):
     """takes in a frame and checks to see if a person is in that frame/image
     it returns a boolean value representing on if their is a person in the frame
@@ -133,12 +146,10 @@ def face_recognition(frame):
     # Detect the faces in the grayscale frame
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
 
-    detected = False
-
     # Check if any faces are detected
+    detected = False
     box = []
     if len(faces) > 0:
-
         detected = True
 
         # Draw rectangles around the detected face regions
@@ -160,7 +171,6 @@ def get_faces(path="./celebrities"):
             image is mxn.
     """
     # Traverse the directory and get one image per subdirectory.
-    faces = []
     for (dirpath, dirnames, filenames) in os.walk(path):
         for fname in filenames:
             if fname[-3:] == "jpg":  # Only get jpg images.
@@ -219,7 +229,6 @@ def get_faces(path="./celebrities"):
 if __name__ == "__main__":
     pass
     # get_faces()
-
 
     # celebs = Celebrities()
     # celebs.scrape()

@@ -64,31 +64,3 @@ def startup():
     name = reply.split(" ")[-1]
 
     return name
-
-
-class MainThread:
-    def __init__(self):
-        super(MainThread, self).__init__()
-
-    def run(self):
-        self.TaskExecution()
-
-    def TaskExecution(self):
-        name = startup()
-
-        while True:
-            command = mic_input()
-            if not command:
-                continue
-
-            if "identity" in command:
-                # switch to identity mode
-                continue
-
-            elif "blur" in command:
-                # switch to blur mode
-                continue
-
-            elif "swap" in command:
-                # switch to swap mode
-                continue
