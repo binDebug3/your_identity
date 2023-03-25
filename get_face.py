@@ -38,8 +38,11 @@ def face_recognition(frame):
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             box = [x, y, x + w, y + h]
 
-    # return the frame with the bounding box drawn around the face
-    return frame, [box]
+        # return the frame with the bounding box drawn around the face
+        return frame, [box]
+    
+    else:
+        return frame, []
 
 
 

@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "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" # replace with your API key
+openai.api_key = "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" # replace with your API key
 
 from random import choice
 prompts = [

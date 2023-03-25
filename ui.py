@@ -402,12 +402,16 @@ class App:
             # keep asking for whether to hear a story until it works
             while True:
                 try:
-                    reply = mic_input(prompt="Would you like to hear a story about you that I came up with?")
+                    reply = mic_input(prompt=(
+                        "Would you like to hear a story about you that I came "
+                        "up with? Please say 'Yes, I would like to' or "
+                        "'No, thank you'."
+                    ))
                     reply = reply.split()[0]
                     
                     reply = "".join([c for c in reply.lower() if c.isalpha()])
                     
-                    if reply == 'yes':
+                    if reply == 'yes' or reply == 'sure' or reply == 'okay':
                         self.yes_story = True
                     elif reply == 'no' or reply == 'nah':
                         self.yes_story = False
@@ -416,7 +420,12 @@ class App:
                         
                     
                 except Exception as e:
+<<<<<<< HEAD
                     speak("Try saying that again in a full sentence that ends with yes or no.")
+=======
+                    speak("Try saying that again like this: My name is Aden Tee")
+                    self.yes_story = False
+>>>>>>> d49a359de249c2e62db24d9a36f152a5b1b5242e
                     continue
                 else:
                     break
