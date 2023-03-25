@@ -222,7 +222,9 @@ def get_faces(path="./celebrities"):
 
 if __name__ == "__main__":
     pass
-    get_faces()
+    # get_faces()
+
+
     # celebs = Celebrities()
     # celebs.scrape()
     # celebs.save_names()
