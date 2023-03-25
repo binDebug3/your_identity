@@ -115,12 +115,9 @@ class Celebrities(object):
 
 
 if __name__ == "__main__":
-    celebs = Celebrities()
-    celebs.scrape()
-    celebs.save_names()
-
-
+    pass
+    # celebs = Celebrities()
+    # celebs.scrape()
+    # celebs.save_names()
     # celebs.save_images()
-    # print(celebs.names)
-    # print(celebs.links)
 
