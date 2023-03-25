@@ -1,1021 +1,2809 @@
 C:\Users\dalli\anaconda3\python.exe C:/Users/dalli/source/repos/yhack2023/your_identity/scrape_celebs.py
 Saved image: Aaron_Eckhart1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Error: No face found in image Aaron_Paul.jpg
 Saved image: Aaron_Taylor-Johnson1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Abbie_Cornish1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Abigail_Breslin1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Adam_Driver1.jpg
+	Old:  (58, 86)
+	New:  (140, 209)
 Saved image: Adam_Sandler1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Adriana_Barraza1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Adrianne_Palicki1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Adrien_Brody1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Alan_Alda1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Alan_Arkin1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Alan_Rickman1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Albert_Brooks1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Albert_Finney1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Alec_Baldwin1.jpg
-[ WARN:0@2.317] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Alexander_Skarsgård\Alexander_Skarsgård.jpg'): can't open/read file: check file path/integrity
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Alec_Guinness1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Failed to read image: Alexander_Skarsgård.jpg
+[ WARN:0@2.009] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Alexander_Skarsgård\Alexander_Skarsgård.jpg'): can't open/read file: check file path/integrity
 Saved image: Alexandra_Daddario1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Error: No face found in image Alexis_Thorpe.jpg
 Saved image: Alfred_Molina1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Alice_Eve1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Alicia_Silverstone1.jpg
+	Old:  (56, 84)
+	New:  (140, 209)
 Saved image: Alicia_Vikander1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Saved image: Allison_Janney1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Al_Pacino1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Amanda_Bynes1.jpg
+	Old:  (63, 94)
+	New:  (140, 209)
 Saved image: Amanda_Peet1.jpg
+	Old:  (139, 202)
+	New:  (140, 209)
 Saved image: Amanda_Seyfried1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Amber_Heard1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Amy_Adams1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Amy_Poehler1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Amy_Ryan1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Andrea_Riseborough1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Andrew_Garfield1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Andrew_Lincoln1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Andy_Garcia1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Andy_Samberg1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Andy_Serkis1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Angela_Bassett1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Angela_Lansbury1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Angelina_Jolie1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Anjelica_Huston1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: AnnaSophia_Robb1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Anna_Faris1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Anna_Kendrick1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Anna_Magnani1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Anna_Paquin1.jpg
+	Old:  (132, 190)
+	New:  (140, 209)
 Saved image: Annette_Bening1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Saved image: Anne_Bancroft1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Anne_Baxter1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Anne_Hathaway1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Anthony_Hopkins1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Anthony_Mackie1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Anthony_Perkins1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Anthony_Quinn1.jpg
+	Old:  (139, 204)
+	New:  (140, 209)
 Saved image: Antonio_Banderas1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Armin_Mueller-Stahl1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Arnold_Schwarzenegger1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Art_Carney1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Ashley_Judd1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Error: No face found in image Ashton_Kutcher.jpg
 Saved image: Audrey_Hepburn1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Audrey_Tautou1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Ava_Gardner1.jpg
+	Old:  (70, 104)
+	New:  (140, 209)
 Saved image: Barbara_Stanwyck1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Barbra_Streisand1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Error: No face found in image Barry_Fitzgerald.jpg
 Error: No face found in image Barry_Pepper.jpg
 Saved image: Beatrice_Straight1.jpg
+	Old:  (133, 188)
+	New:  (140, 209)
 Saved image: Benedict_Cumberbatch1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Benicio_Del_Toro1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Benjamin_Bratt1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Ben_Affleck1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Ben_Foster1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Error: No face found in image Ben_Johnson.jpg
 Saved image: Ben_Kingsley1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Ben_Stiller1.jpg
+	Old:  (137, 190)
+	New:  (140, 209)
 Error: No face found in image Bernie_Mac.jpg
 Error: No face found in image Bette_Davis.jpg
 Saved image: Bette_Midler1.jpg
-[ WARN:0@10.323] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Beyoncé\Beyoncé.jpg'): can't open/read file: check file path/integrity
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Betty_White1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Failed to read image: Beyoncé.jpg
+[ WARN:0@7.898] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Beyoncé\Beyoncé.jpg'): can't open/read file: check file path/integrity
 Saved image: Billy_Bob_Thornton1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Billy_Burke1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Billy_Crudup1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Billy_Crystal1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Billy_Zane1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Bill_Hader1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Bill_Murray1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Bill_Paxton1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Bill_Pullman1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Bing_Crosby1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Failed to read image: Björk.jpg
-[ WARN:0@11.575] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Björk\Björk.jpg'): can't open/read file: check file path/integrity
+[ WARN:0@8.840] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Björk\Björk.jpg'): can't open/read file: check file path/integrity
 Saved image: Blake_Lively1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Bob_Hoskins1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Error: No face found in image Bonnie_Hunt.jpg
 Saved image: Boris_Karloff1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Bradley_Cooper1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Brad_Pitt1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Brendan_Fraser1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: Brendan_Gleeson1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Brenda_Blethyn1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Brenda_Fricker1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Brian_Cox1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Brie_Larson1.jpg
+	Old:  (73, 205)
+	New:  (140, 209)
 Saved image: Brittany_Snow1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Brit_Marling1.jpg
+	Old:  (135, 209)
+	New:  (140, 209)
 Saved image: Broderick_Crawford1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Bruce_Davison1.jpg
+	Old:  (136, 204)
+	New:  (140, 209)
 Saved image: Bruce_Dern1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Error: No face found in image Bruce_Lee.jpg
 Saved image: Bruce_Willis1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Bruno_Ganz1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Bryan_Cranston1.jpg
+	Old:  (138, 192)
+	New:  (140, 209)
 Error: No face found in image Burl_Ives.jpg
 Saved image: Burt_Lancaster1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Burt_Reynolds1.jpg
-[ WARN:0@14.326] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Bérénice_Bejo\Bérénice_Bejo.jpg'): can't open/read file: check file path/integrity
+	Old:  (106, 158)
+	New:  (140, 209)
+[ WARN:0@11.451] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Bérénice_Bejo\Bérénice_Bejo.jpg'): can't open/read file: check file path/integrity
 Saved image: Buster_Keaton1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Failed to read image: Bérénice_Bejo.jpg
 Saved image: Cameron_Diaz1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Cam_Gigandet1.jpg
+	Old:  (135, 203)
+	New:  (140, 209)
 Saved image: Carey_Mulligan1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Carmen_Miranda1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: Carole_Lombard1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Carol_Burnett1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Carrie-Anne_Moss1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Carrie_Fisher1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Cary_Elwes1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Cary_Grant1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: Casey_Affleck1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Catalina_Sandino_Moreno1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Cate_Blanchett1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Catherine_Deneuve1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Catherine_Keener1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Catherine_Zeta-Jones1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Celeste_Holm1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Chadwick_Boseman1.jpg
+	Old:  (50, 74)
+	New:  (140, 209)
 Saved image: Channing_Tatum1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Charles_Bronson1.jpg
+	Old:  (125, 209)
+	New:  (140, 209)
 Saved image: Charles_Chaplin1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Charles_Coburn1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Charles_Laughton1.jpg
+	Old:  (84, 126)
+	New:  (140, 209)
 Saved image: Charlie_Day1.jpg
+	Old:  (67, 100)
+	New:  (140, 209)
 Saved image: Charlie_Hunnam1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Charlie_Sheen1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Charlize_Theron1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Error: No face found in image Charlotte_Rampling.jpg
 Saved image: Charlton_Heston1.jpg
+	Old:  (127, 201)
+	New:  (140, 209)
 Saved image: Chazz_Palminteri1.jpg
+	Old:  (71, 106)
+	New:  (140, 209)
 Saved image: Cher1.jpg
-[ WARN:0@18.144] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Chloë_Grace_Moretz\Chloë_Grace_Moretz.jpg'): can't open/read file: check file path/integrity
-[ WARN:0@18.145] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Chloë_Sevigny\Chloë_Sevigny.jpg'): can't open/read file: check file path/integrity
+	Old:  (112, 168)
+	New:  (140, 209)
+[ WARN:0@14.886] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Chloë_Grace_Moretz\Chloë_Grace_Moretz.jpg'): can't open/read file: check file path/integrity
+[ WARN:0@14.886] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Chloë_Sevigny\Chloë_Sevigny.jpg'): can't open/read file: check file path/integrity
 Saved image: Chiwetel_Ejiofor1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Failed to read image: Chloë_Grace_Moretz.jpg
 Failed to read image: Chloë_Sevigny.jpg
 Saved image: Choi_Min-sik1.jpg
+	Old:  (42, 62)
+	New:  (140, 209)
 Saved image: Chow_Yun-Fat1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Christian_Bale1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Christina_Applegate1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Christina_Ricci1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Christine_Taylor1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Christopher_Guest1.jpg
+	Old:  (87, 184)
+	New:  (140, 209)
 Saved image: Christopher_Lee1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Christopher_Lloyd1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Christopher_Plummer1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Christopher_Reeve1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Christopher_Walken1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Christoph_Waltz1.jpg
+	Old:  (136, 204)
+	New:  (140, 209)
 Saved image: Chris_Cooper1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Chris_Evans1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Chris_Hemsworth1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Chris_O'Donnell1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Chris_Pine1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Chris_Pratt1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Chris_Rock1.jpg
+	Old:  (125, 204)
+	New:  (140, 209)
 Saved image: Chris_Tucker1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Error: No face found in image Chuck_Norris.jpg
 Error: No face found in image Cillian_Murphy.jpg
 Saved image: Claire_Danes1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Claire_Foy1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Claire_Trevor1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Clark_Gable1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Error: No face found in image Claudette_Colbert.jpg
 Saved image: Claude_Rains1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Claudia_Cardinale1.jpg
+	Old:  (59, 88)
+	New:  (140, 209)
 Saved image: Cliff_Robertson1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Clint_Eastwood1.jpg
+	Old:  (129, 190)
+	New:  (140, 209)
 Saved image: Clive_Owen1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Cloris_Leachman1.jpg
+	Old:  (134, 178)
+	New:  (140, 209)
 Saved image: Cobie_Smulders1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Colin_Farrell1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Colin_Firth1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Common1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Courteney_Cox1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Craig_Robinson1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Craig_T._Nelson1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Cuba_Gooding_Jr.1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Cynthia_Erivo1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Dakota_Fanning1.jpg
-[ WARN:0@23.230] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Daniel_Brühl\Daniel_Brühl.jpg'): can't open/read file: check file path/integrity
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Dakota_Johnson1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Failed to read image: Daniel_Brühl.jpg
+[ WARN:0@19.736] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Daniel_Brühl\Daniel_Brühl.jpg'): can't open/read file: check file path/integrity
 Saved image: Daniel_Craig1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Daniel_Day-Lewis1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Daniel_Radcliffe1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Danny_Aiello1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Danny_DeVito1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Danny_Glover1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Danny_McBride1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Dan_Aykroyd1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Daryl_Hannah1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Dave_Franco1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: David_Niven1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: David_Oyelowo1.jpg
+	Old:  (127, 209)
+	New:  (140, 209)
 Saved image: David_Spade1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: David_Strathairn1.jpg
+	Old:  (134, 192)
+	New:  (140, 209)
 Saved image: David_Thewlis1.jpg
+	Old:  (139, 200)
+	New:  (140, 209)
 Saved image: Dean_Jagger1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Dean_Stockwell1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Debbie_Reynolds1.jpg
+	Old:  (80, 120)
+	New:  (140, 209)
 Error: No face found in image Deborah_Kerr.jpg
 Saved image: Debra_Winger1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Demi_Moore1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: Dennis_Hopper1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Dennis_Quaid1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Denzel_Washington1.jpg
+	Old:  (50, 74)
+	New:  (140, 209)
 Saved image: Diane_Keaton1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Diane_Lane1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Error: No face found in image Dianne_Wiest.jpg
 Saved image: Dick_Van_Dyke1.jpg
+	Old:  (129, 209)
+	New:  (140, 209)
 Saved image: Djimon_Hounsou1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Donald_Crisp1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Donald_Sutherland1.jpg
+	Old:  (139, 209)
+	New:  (140, 209)
 Saved image: Donna_Reed1.jpg
+	Old:  (80, 120)
+	New:  (140, 209)
 Saved image: Don_Ameche1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Don_Cheadle1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Error: No face found in image Doris_Day.jpg
 Saved image: Dorothy_Malone1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Drew_Barrymore1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Dudley_Moore1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Dustin_Hoffman1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Dwayne_Johnson1.jpg
+	Old:  (139, 150)
+	New:  (140, 209)
 Saved image: Eddie_Murphy1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Eddie_Redmayne1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Edmond_O'Brien1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Error: No face found in image Edmund_Gwenn.jpg
 Saved image: Edward_G._Robinson1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Edward_James_Olmos1.jpg
+	Old:  (137, 209)
+	New:  (140, 209)
 Saved image: Edward_Norton1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Ed_Begley1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Ed_Harris1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Ed_Helms1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Eileen_Heckart1.jpg
+	Old:  (138, 209)
+	New:  (140, 209)
 Saved image: Elijah_Wood1.jpg
+	Old:  (132, 209)
+	New:  (140, 209)
 Saved image: Elisabeth_Moss1.jpg
+	Old:  (122, 209)
+	New:  (140, 209)
 Saved image: Elisabeth_Shue1.jpg
+	Old:  (136, 194)
+	New:  (140, 209)
 Saved image: Elizabeth_Banks1.jpg
+	Old:  (49, 72)
+	New:  (140, 209)
 Saved image: Elizabeth_Olsen1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Elizabeth_Taylor1.jpg
+	Old:  (53, 78)
+	New:  (140, 209)
 Error: No face found in image Eliza_Dushku.jpg
 Saved image: Ellen_Burstyn1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Elliot_Page1.jpg
+	Old:  (132, 209)
+	New:  (140, 209)
 Saved image: Elvis_Presley1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Emilia_Clarke1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Emilio_Estevez1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Emily_Blunt1.jpg
+	Old:  (86, 202)
+	New:  (140, 209)
 Saved image: Emily_Browning1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Emily_Watson1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Emil_Jannings1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Emmanuelle_Riva1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Error: No face found in image Emma_Roberts.jpg
 Saved image: Emma_Stone1.jpg
+	Old:  (84, 126)
+	New:  (140, 209)
 Saved image: Emma_Thompson1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Emma_Watson1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Emmy_Rossum1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Erich_von_Stroheim1.jpg
+	Old:  (72, 108)
+	New:  (140, 209)
 Saved image: Eric_Bana1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Ernest_Borgnine1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Errol_Flynn1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Estelle_Parsons1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Ethan_Hawke1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Error: No face found in image Ethel_Barrymore.jpg
 Saved image: Evangeline_Lilly1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Evan_Rachel_Wood1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Eva_Green1.jpg
+	Old:  (129, 206)
+	New:  (140, 209)
 Saved image: Eva_Marie_Saint1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Eva_Mendes1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Ewan_McGregor1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Error: No face found in image Ezra_Miller.jpg
 Saved image: F._Murray_Abraham1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Fairuza_Balk1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Famke_Janssen1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Faye_Dunaway1.jpg
+	Old:  (137, 209)
+	New:  (140, 209)
 Saved image: Felicity_Huffman1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Felicity_Jones1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Fernanda_Montenegro1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Florence_Pugh1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Forest_Whitaker1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Frances_McDormand1.jpg
+	Old:  (125, 190)
+	New:  (140, 209)
 Saved image: Franka_Potente1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Frank_Langella1.jpg
+	Old:  (136, 182)
+	New:  (140, 209)
 Saved image: Frank_Sinatra1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Freddie_Highmore1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Fredric_March1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Fred_Astaire1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Freida_Pinto1.jpg
-[ WARN:0@34.898] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Gael_García_Bernal\Gael_García_Bernal.jpg'): can't open/read file: check file path/integrity
+	Old:  (114, 170)
+	New:  (140, 209)
+[ WARN:0@32.362] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Gael_García_Bernal\Gael_García_Bernal.jpg'): can't open/read file: check file path/integrity
 Saved image: Gabourey_Sidibe1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Failed to read image: Gael_García_Bernal.jpg
 Saved image: Gale_Sondergaard1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Gal_Gadot1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Garrett_Hedlund1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Gary_Busey1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Gary_Cooper1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Gary_Oldman1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Gary_Sinise1.jpg
+	Old:  (80, 120)
+	New:  (140, 209)
 Error: No face found in image Geena_Davis.jpg
 Saved image: Gemma_Arterton1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Gena_Rowlands1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Gene_Hackman1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Gene_Kelly1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Gene_Wilder1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Geoffrey_Rush1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: George_Burns1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Error: No face found in image George_C._Scott.jpg
 Saved image: George_Chakiris1.jpg
+	Old:  (131, 201)
+	New:  (140, 209)
 Saved image: George_Clooney1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: George_Kennedy1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: George_Sanders1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Geraldine_Page1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Gerard_Butler1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Gig_Young1.jpg
+	Old:  (135, 192)
+	New:  (140, 209)
 Saved image: Gillian_Anderson1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Ginger_Rogers1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Ginnifer_Goodwin1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: Giovanni_Ribisi1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Glenda_Jackson1.jpg
+	Old:  (136, 160)
+	New:  (140, 209)
 Saved image: Glenn_Close1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Gloria_Grahame1.jpg
+	Old:  (127, 202)
+	New:  (140, 209)
 Saved image: Gloria_Stuart1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Error: No face found in image Gloria_Swanson.jpg
 Saved image: Goldie_Hawn1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Grace_Kelly1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Graham_Greene1.jpg
+	Old:  (127, 202)
+	New:  (140, 209)
 Saved image: Greer_Garson1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: Gregory_Peck1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Greg_Kinnear1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Error: No face found in image Greta_Garbo.jpg
 Saved image: Greta_Gerwig1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Groucho_Marx1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Guy_Pearce1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Gwyneth_Paltrow1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Failed to read image: Gérard_Depardieu.jpg
-[ WARN:0@39.698] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Gérard_Depardieu\Gérard_Depardieu.jpg'): can't open/read file: check file path/integrity
+[ WARN:0@37.549] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Gérard_Depardieu\Gérard_Depardieu.jpg'): can't open/read file: check file path/integrity
 Error: No face found in image Hailee_Steinfeld.jpg
 Saved image: Haing_S._Ngor1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Haley_Joel_Osment1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Halle_Berry1.jpg
+	Old:  (73, 195)
+	New:  (140, 209)
 Saved image: Hal_Holbrook1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Harold_Russell1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Harrison_Ford1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Harvey_Keitel1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Hattie_McDaniel1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Error: No face found in image Hayden_Christensen.jpg
 Saved image: Heath_Ledger1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Helena_Bonham_Carter1.jpg
+	Old:  (130, 197)
+	New:  (140, 209)
 Saved image: Helen_Hayes1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Helen_Hunt1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Helen_Mirren1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Henry_Cavill1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Saved image: Henry_Fonda1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Hilary_Duff1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Hilary_Swank1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Holly_Hunter1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Hugh_Grant1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Hugh_Griffith1.jpg
+	Old:  (139, 204)
+	New:  (140, 209)
 Saved image: Hugh_Jackman1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Hugh_Laurie1.jpg
+	Old:  (42, 62)
+	New:  (140, 209)
 Saved image: Hugo_Weaving1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Humphrey_Bogart1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Ian_Holm1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Ian_McKellen1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Ice_Cube1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Ida_Lupino1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Idris_Elba1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Imelda_Staunton1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Ingrid_Bergman1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Ioan_Gruffudd1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Irrfan_Khan1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Error: No face found in image Isabelle_Adjani.jpg
 Saved image: Isabelle_Huppert1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Isla_Fisher1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: J.K._Simmons1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Jackie_Chan1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Jackie_Earle_Haley1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Jacki_Weaver1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Jack_Albertson1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Jack_Black1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Jack_Davenport1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Error: No face found in image Jack_Lemmon.jpg
 Saved image: Jack_Nicholson1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Error: No face found in image Jack_Palance.jpg
 Saved image: Jada_Pinkett_Smith1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Jake_Gyllenhaal1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: James_Caan1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: James_Cagney1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Error: No face found in image James_Coburn.jpg
 Saved image: James_Cromwell1.jpg
+	Old:  (46, 68)
+	New:  (140, 209)
 Saved image: James_Dean1.jpg
+	Old:  (140, 191)
+	New:  (140, 209)
 Saved image: James_Franco1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: James_Gandolfini1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: James_Garner1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: James_Marsden1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: James_Mason1.jpg
+	Old:  (72, 108)
+	New:  (140, 209)
 Saved image: James_McAvoy1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: James_Spader1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: James_Stewart1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: James_Woods1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Jamie_Bell1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Jamie_Chung1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Jamie_Foxx1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Jamie_Lee_Curtis1.jpg
+	Old:  (72, 108)
+	New:  (140, 209)
 Saved image: Janet_Gaynor1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Janet_Leigh1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Janet_McTeer1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Jane_Alexander1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Jane_Darwell1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Jane_Fonda1.jpg
+	Old:  (136, 204)
+	New:  (140, 209)
 Saved image: Jane_Seymour1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Jane_Wyman1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: January_Jones1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Jared_Leto1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Jason_Bateman1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Jason_Robards1.jpg
+	Old:  (132, 204)
+	New:  (140, 209)
 Saved image: Jason_Schwartzman1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Jason_Segel1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Jason_Statham1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Jason_Sudeikis1.jpg
+	Old:  (70, 104)
+	New:  (140, 209)
 Saved image: Javier_Bardem1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Jay_Baruchel1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Jean-Claude_Van_Damme1.jpg
+	Old:  (136, 202)
+	New:  (140, 209)
 Saved image: Jean-Louis_Trintignant1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Jean-Paul_Belmondo1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Jeanne_Moreau1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Jean_Arthur1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Jean_Dujardin1.jpg
+	Old:  (38, 56)
+	New:  (140, 209)
 Saved image: Jean_Harlow1.jpg
+	Old:  (80, 120)
+	New:  (140, 209)
 Saved image: Jean_Reno1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Jean_Seberg1.jpg
+	Old:  (135, 178)
+	New:  (140, 209)
 Saved image: Jeffrey_Wright1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Jeff_Bridges1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Jeff_Daniels1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Jeff_Goldblum1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Jena_Malone1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Jennifer_Aniston1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Jennifer_Connelly1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Jennifer_Coolidge1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Jennifer_Garner1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Jennifer_Hudson1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Jennifer_Jason_Leigh1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Jennifer_Jones1.jpg
+	Old:  (139, 188)
+	New:  (140, 209)
 Saved image: Jennifer_Lawrence1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Jennifer_Lopez1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Error: No face found in image Jennifer_Love_Hewitt.jpg
 Saved image: Jeremy_Irons1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Jeremy_Renner1.jpg
+	Old:  (137, 202)
+	New:  (140, 209)
 Saved image: Jerry_Lewis1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Jesse_Eisenberg1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Jessica_Alba1.jpg
+	Old:  (132, 209)
+	New:  (140, 209)
 Saved image: Jessica_Biel1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Jessica_Chastain1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Jessica_Lange1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Jessica_Lucas1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: Jessica_Tandy1.jpg
+	Old:  (135, 192)
+	New:  (140, 209)
 Saved image: Jet_Li1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Error: No face found in image Jill_Clayburgh.jpg
 Saved image: Jim_Broadbent1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Jim_Carrey1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Jim_Caviezel1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Joanne_Woodward1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Saved image: Joan_Allen1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Joan_Crawford1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Joan_Fontaine1.jpg
+	Old:  (138, 182)
+	New:  (140, 209)
 Saved image: Joaquin_Phoenix1.jpg
+	Old:  (129, 184)
+	New:  (140, 209)
 Saved image: Jodie_Foster1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Joel_McCrea1.jpg
+	Old:  (56, 84)
+	New:  (140, 209)
 Saved image: Joey_King1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Joe_Pesci1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Johnny_Depp1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: John_Barrymore1.jpg
+	Old:  (80, 120)
+	New:  (140, 209)
 Saved image: John_C._Reilly1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: John_Candy1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: John_Cazale1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: John_Cleese1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: John_Cusack1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: John_Gielgud1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: John_Goodman1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: John_Hawkes1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: John_Houseman1.jpg
+	Old:  (60, 90)
+	New:  (140, 209)
 Saved image: John_Hurt1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: John_Krasinski1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: John_Leguizamo1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: John_Malkovich1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: John_Mills1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Error: No face found in image John_Rhys-Davies.jpg
 Saved image: John_Travolta1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: John_Turturro1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: John_Wayne1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Jonah_Hill1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Jonathan_Pryce1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Jonathan_Rhys_Meyers1.jpg
+	Old:  (139, 190)
+	New:  (140, 209)
 Saved image: Jon_Favreau1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Jon_Hamm1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Jon_Heder1.jpg
+	Old:  (133, 204)
+	New:  (140, 209)
 Saved image: Jon_Voight1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Joseph_Cotten1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Joseph_Gordon-Levitt1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Joseph_Schildkraut1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Josh_Brolin1.jpg
+	Old:  (138, 209)
+	New:  (140, 209)
 Saved image: Josh_Duhamel1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Josh_Gad1.jpg
-[ WARN:0@58.603] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\José_Ferrer\José_Ferrer.jpg'): can't open/read file: check file path/integrity
+	Old:  (113, 168)
+	New:  (140, 209)
+[ WARN:0@55.799] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\José_Ferrer\José_Ferrer.jpg'): can't open/read file: check file path/integrity
 Saved image: Josh_Hartnett1.jpg
+	Old:  (57, 84)
+	New:  (140, 209)
 Failed to read image: José_Ferrer.jpg
 Saved image: Jo_Van_Fleet1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Jude_Law1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Judi_Dench1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Judy_Davis1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Judy_Garland1.jpg
+	Old:  (72, 108)
+	New:  (140, 209)
 Error: No face found in image Judy_Holliday.jpg
 Saved image: Julianne_Hough1.jpg
+	Old:  (72, 108)
+	New:  (140, 209)
 Saved image: Julianne_Moore1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Julia_Louis-Dreyfus1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Julia_Roberts1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Julia_Stiles1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Juliette_Binoche1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Juliette_Lewis1.jpg
+	Old:  (84, 126)
+	New:  (140, 209)
 Saved image: Julie_Andrews1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Julie_Christie1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Julie_Delpy1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Julie_Walters1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: June_Squibb1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Justin_Long1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Kaley_Cuoco1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Error: No face found in image Karl_Urban.jpg
 Saved image: Kate_Beckinsale1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Kate_Bosworth1.jpg
+	Old:  (136, 204)
+	New:  (140, 209)
 Saved image: Kate_Hudson1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Error: No face found in image Kate_Mara.jpg
 Saved image: Kate_Winslet1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Katharine_Hepburn1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Katherine_Heigl1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Kathleen_Quinlan1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Kathleen_Turner1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Error: No face found in image Kathy_Bates.jpg
 Saved image: Katie_Holmes1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Error: No face found in image Kat_Dennings.jpg
 Saved image: Keanu_Reeves1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Keira_Knightley1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Keisha_Castle-Hughes1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Saved image: Kenneth_Branagh1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Ken_Watanabe1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Keri_Russell1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Kerry_Washington1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Kevin_Bacon1.jpg
+	Old:  (49, 72)
+	New:  (140, 209)
 Saved image: Kevin_Costner1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Kevin_Hart1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Kevin_James1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Kevin_Kline1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Kevin_Spacey1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Kiefer_Sutherland1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Error: No face found in image Kim_Basinger.jpg
 Saved image: Kim_Hunter1.jpg
+	Old:  (67, 100)
+	New:  (140, 209)
 Error: No face found in image Kim_Novak.jpg
 Saved image: Kirk_Douglas1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Kirsten_Dunst1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Error: No face found in image Klaus_Kinski.jpg
 Saved image: Kristen_Bell1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Kristen_Stewart1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Error: No face found in image Kristen_Wiig.jpg
 Saved image: Kristin_Scott_Thomas1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Kurt_Russell1.jpg
+	Old:  (131, 192)
+	New:  (140, 209)
 Saved image: Lake_Bell1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Lance_Henriksen1.jpg
+	Old:  (67, 100)
+	New:  (140, 209)
 Saved image: Laura_Dern1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Laura_Linney1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Laurence_Fishburne1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Laurence_Olivier1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Lauren_Bacall1.jpg
+	Old:  (80, 120)
+	New:  (140, 209)
 Error: No face found in image Lee_Grant.jpg
 Saved image: Lee_J._Cobb1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Lee_Marvin1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Leighton_Meester1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Lena_Headey1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Leonardo_DiCaprio1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Lesley_Manville1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Leslie_Mann1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Leslie_Nielsen1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Liam_Hemsworth1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Liam_Neeson1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Liev_Schreiber1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Lili_Taylor1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Lillian_Gish1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Error: No face found in image Lily_Collins.jpg
 Saved image: Lily_Tomlin1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Linda_Fiorentino1.jpg
+	Old:  (49, 72)
+	New:  (140, 209)
 Error: No face found in image Linda_Hamilton.jpg
 Saved image: Linda_Hunt1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: Lindsay_Lohan1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Lionel_Barrymore1.jpg
+	Old:  (67, 100)
+	New:  (140, 209)
 Saved image: Lisa_Kudrow1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Liv_Tyler1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Error: No face found in image Liv_Ullmann.jpg
 Saved image: Liza_Minnelli1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Logan_Lerman1.jpg
+	Old:  (59, 88)
+	New:  (140, 209)
 Saved image: Loretta_Young1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Louise_Fletcher1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Louis_Gossett_Jr.1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Lucille_Ball1.jpg
+	Old:  (71, 106)
+	New:  (140, 209)
 Saved image: Lucy_Liu1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Luise_Rainer1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Luke_Wilson1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Lupita_Nyong'o1.jpg
+	Old:  (84, 126)
+	New:  (140, 209)
 Saved image: Lynn_Redgrave1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Failed to read image: Léa_Seydoux.jpg
-[ WARN:0@70.992] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Léa_Seydoux\Léa_Seydoux.jpg'): can't open/read file: check file path/integrity
+[ WARN:0@66.547] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Léa_Seydoux\Léa_Seydoux.jpg'): can't open/read file: check file path/integrity
 Saved image: Macaulay_Culkin1.jpg
+	Old:  (60, 90)
+	New:  (140, 209)
 Saved image: Mads_Mikkelsen1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Mae_West1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Maggie_Grace1.jpg
+	Old:  (135, 156)
+	New:  (140, 209)
 Saved image: Maggie_Gyllenhaal1.jpg
+	Old:  (133, 209)
+	New:  (140, 209)
 Saved image: Maggie_Smith1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Mahershala_Ali1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Malcolm_McDowell1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Error: No face found in image Mandy_Moore.jpg
 Saved image: Marcello_Mastroianni1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Marcia_Gay_Harden1.jpg
+	Old:  (77, 114)
+	New:  (140, 209)
 Saved image: Margot_Kidder1.jpg
+	Old:  (127, 209)
+	New:  (140, 209)
 Saved image: Margot_Robbie1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Maria_Bello1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Error: No face found in image Maria_Falconetti.jpg
 Saved image: Marie_Dressler1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Marilyn_Monroe1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: Marion_Cotillard1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Marion_Davies1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Marisa_Tomei1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Mark_Hamill1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Mark_Ruffalo1.jpg
+	Old:  (139, 198)
+	New:  (140, 209)
 Saved image: Mark_Rylance1.jpg
+	Old:  (132, 180)
+	New:  (140, 209)
 Error: No face found in image Mark_Strong.jpg
 Saved image: Mark_Wahlberg1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Marlee_Matlin1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Error: No face found in image Marlene_Dietrich.jpg
 Saved image: Marlon_Brando1.jpg
+	Old:  (140, 201)
+	New:  (140, 209)
 Saved image: Marlon_Wayans1.jpg
+	Old:  (63, 94)
+	New:  (140, 209)
 Saved image: Marsha_Mason1.jpg
+	Old:  (59, 88)
+	New:  (140, 209)
 Saved image: Martin_Balsam1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Martin_Landau1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Error: No face found in image Martin_Lawrence.jpg
 Saved image: Martin_Sheen1.jpg
+	Old:  (139, 192)
+	New:  (140, 209)
 Saved image: Mary_Astor1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Mary_Elizabeth_Winstead1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Mary_McDonnell1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Mary_Pickford1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Mary_Steenburgen1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Mary_Tyler_Moore1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Matthew_Broderick1.jpg
+	Old:  (134, 192)
+	New:  (140, 209)
 Saved image: Matthew_McConaughey1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Matt_Damon1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Matt_Dillon1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Maureen_O'Hara1.jpg
+	Old:  (135, 170)
+	New:  (140, 209)
 Saved image: Maureen_Stapleton1.jpg
+	Old:  (138, 198)
+	New:  (140, 209)
 Error: No face found in image Maximilian_Schell.jpg
 Error: No face found in image Max_von_Sydow.jpg
 Saved image: Maya_Rudolph1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Megan_Fox1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Meg_Ryan1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Saved image: Melanie_Griffith1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Melissa_Leo1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Melissa_McCarthy1.jpg
+	Old:  (64, 96)
+	New:  (140, 209)
 Saved image: Melvyn_Douglas1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Mel_Blanc1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Error: No face found in image Mel_Brooks.jpg
 Saved image: Mel_Gibson1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Mercedes_McCambridge1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Mercedes_Ruehl1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Meryl_Streep1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Mia_Farrow1.jpg
+	Old:  (139, 170)
+	New:  (140, 209)
 Saved image: Mia_Wasikowska1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Michael_B._Jordan1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Michael_C._Hall1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Michael_Caine1.jpg
+	Old:  (139, 194)
+	New:  (140, 209)
 Saved image: Michael_Cera1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Michael_Clarke_Duncan1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Michael_Douglas1.jpg
+	Old:  (137, 198)
+	New:  (140, 209)
 Saved image: Michael_Ealy1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Michael_Fassbender1.jpg
+	Old:  (121, 180)
+	New:  (140, 209)
 Saved image: Michael_J._Fox1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Michael_Keaton1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Michael_Lerner1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Michael_Rooker1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Michael_Shannon1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Michael_Sheen1.jpg
+	Old:  (140, 185)
+	New:  (140, 209)
 Saved image: Michelle_Monaghan1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Michelle_Pfeiffer1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Error: No face found in image Michelle_Rodriguez.jpg
 Saved image: Michelle_Trachtenberg1.jpg
+	Old:  (84, 126)
+	New:  (140, 209)
 Saved image: Michelle_Williams1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Michelle_Yeoh1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Mickey_Rourke1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Mike_Myers1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Mila_Kunis1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Miles_Teller1.jpg
+	Old:  (46, 68)
+	New:  (140, 209)
 Saved image: Miley_Cyrus1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Milla_Jovovich1.jpg
+	Old:  (139, 192)
+	New:  (140, 209)
 Saved image: Mindy_Kaling1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Minnie_Driver1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Miranda_Richardson1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: Mira_Sorvino1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Mireille_Enos1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Miyoshi_Umeki1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Mo'Nique1.jpg
+	Old:  (135, 178)
+	New:  (140, 209)
 Saved image: Mohanlal1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Molly_Ringwald1.jpg
+	Old:  (66, 98)
+	New:  (140, 209)
 Saved image: Montgomery_Clift1.jpg
+	Old:  (128, 209)
+	New:  (140, 209)
 Saved image: Morgan_Freeman1.jpg
-[ WARN:0@83.080] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Mélanie_Laurent\Mélanie_Laurent.jpg'): can't open/read file: check file path/integrity
+	Old:  (116, 174)
+	New:  (140, 209)
+[ WARN:0@77.362] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Mélanie_Laurent\Mélanie_Laurent.jpg'): can't open/read file: check file path/integrity
 Saved image: Myrna_Loy1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Failed to read image: Mélanie_Laurent.jpg
 Saved image: Naomi_Watts1.jpg
+	Old:  (135, 204)
+	New:  (140, 209)
 Saved image: Nastassja_Kinski1.jpg
+	Old:  (42, 62)
+	New:  (140, 209)
 Saved image: Natalie_Dormer1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Natalie_Portman1.jpg
+	Old:  (78, 116)
+	New:  (140, 209)
 Error: No face found in image Natalie_Wood.jpg
 Saved image: Nathan_Lane1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Ned_Beatty1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Neil_Patrick_Harris1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Neve_Campbell1.jpg
+	Old:  (65, 96)
+	New:  (140, 209)
 Saved image: Nia_Long1.jpg
+	Old:  (71, 106)
+	New:  (140, 209)
 Saved image: Nicholas_Hoult1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Nick_Frost1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Nick_Nolte1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Nicolas_Cage1.jpg
+	Old:  (128, 168)
+	New:  (140, 209)
 Saved image: Nicole_Kidman1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Nigel_Hawthorne1.jpg
+	Old:  (58, 86)
+	New:  (140, 209)
 Saved image: Noomi_Rapace1.jpg
+	Old:  (85, 126)
+	New:  (140, 209)
 Saved image: Norman_Reedus1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Norma_Shearer1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Octavia_Spencer1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Olivia_Colman1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Olivia_de_Havilland1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Olivia_Newton-John1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Olivia_Thirlby1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Saved image: Olivia_Wilde1.jpg
+	Old:  (136, 209)
+	New:  (140, 209)
 Error: No face found in image Olympia_Dukakis.jpg
 Saved image: Omar_Sharif1.jpg
+	Old:  (137, 202)
+	New:  (140, 209)
 Saved image: Orlando_Bloom1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Orson_Welles1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Oscar_Isaac1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Owen_Wilson1.jpg
+	Old:  (139, 200)
+	New:  (140, 209)
 Saved image: Paddy_Considine1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Pam_Grier1.jpg
+	Old:  (137, 162)
+	New:  (140, 209)
 Saved image: Parker_Posey1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Patricia_Arquette1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Patricia_Clarkson1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Patricia_Neal1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Patrick_Stewart1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Patrick_Swayze1.jpg
+	Old:  (136, 192)
+	New:  (140, 209)
 Saved image: Patrick_Wilson1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Patty_Duke1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Error: No face found in image Paula_Patton.jpg
 Saved image: Pauline_Collins1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Paul_Bettany1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Paul_Dano1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Paul_Giamatti1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Paul_Lukas1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Paul_Muni1.jpg
+	Old:  (134, 202)
+	New:  (140, 209)
 Saved image: Paul_Newman1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Paul_Rudd1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Paul_Scofield1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Paul_Walker1.jpg
-[ WARN:0@88.925] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Penélope_Cruz\Penélope_Cruz.jpg'): can't open/read file: check file path/integrity
+	Old:  (113, 184)
+	New:  (140, 209)
+[ WARN:0@83.008] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Penélope_Cruz\Penélope_Cruz.jpg'): can't open/read file: check file path/integrity
 Saved image: Peggy_Ashcroft1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Failed to read image: Penélope_Cruz.jpg
 Saved image: Peter_Dinklage1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Peter_Finch1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Peter_Fonda1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Peter_Lorre1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Peter_O'Toole1.jpg
+	Old:  (94, 203)
+	New:  (140, 209)
 Saved image: Peter_Sarsgaard1.jpg
+	Old:  (106, 158)
+	New:  (140, 209)
 Saved image: Peter_Sellers1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Peter_Ustinov1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Pete_Postlethwaite1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Philip_Seymour_Hoffman1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Pierce_Brosnan1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Piper_Laurie1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Piper_Perabo1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Priyanka_Chopra_Jonas1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Queen_Latifah1.jpg
+	Old:  (136, 209)
+	New:  (140, 209)
 Saved image: Rachel_Griffiths1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Rachel_McAdams1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Rachel_Weisz1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Ralph_Fiennes1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Error: No face found in image Randy_Quaid.jpg
 Saved image: Raquel_Welch1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Rashida_Jones1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Ray_Liotta1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Ray_Milland1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Ray_Stevenson1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Ray_Winstone1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Saved image: Rebecca_Hall1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Error: No face found in image Rebel_Wilson.jpg
 Saved image: Red_Buttons1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Reese_Witherspoon1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Regina_King1.jpg
-[ WARN:0@92.565] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Renée_Zellweger\Renée_Zellweger.jpg'): can't open/read file: check file path/integrity
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Rene_Russo1.jpg
+	Old:  (121, 209)
+	New:  (140, 209)
 Failed to read image: Renée_Zellweger.jpg
+[ WARN:0@86.565] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Renée_Zellweger\Renée_Zellweger.jpg'): can't open/read file: check file path/integrity
 Error: No face found in image Rex_Harrison.jpg
 Saved image: Rhys_Ifans1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Error: No face found in image Richard_Attenborough.jpg
 Saved image: Richard_Burton1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Richard_Dreyfuss1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Richard_E._Grant1.jpg
+	Old:  (87, 130)
+	New:  (140, 209)
 Error: No face found in image Richard_Farnsworth.jpg
 Saved image: Richard_Gere1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Richard_Harris1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Richard_Jenkins1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Rinko_Kikuchi1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Rita_Hayworth1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Rita_Moreno1.jpg
+	Old:  (57, 84)
+	New:  (140, 209)
 Saved image: River_Phoenix1.jpg
+	Old:  (77, 182)
+	New:  (140, 209)
 Saved image: Roberto_Benigni1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Robert_De_Niro1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Error: No face found in image Robert_Donat.jpg
 Saved image: Robert_Downey_Jr.1.jpg
+	Old:  (95, 142)
+	New:  (140, 209)
 Saved image: Robert_Duvall1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Robert_Forster1.jpg
+	Old:  (128, 180)
+	New:  (140, 209)
 Saved image: Robert_Mitchum1.jpg
+	Old:  (63, 94)
+	New:  (140, 209)
 Saved image: Robert_Pattinson1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Robert_Redford1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Error: No face found in image Robert_Shaw.jpg
 Saved image: Robin_Weigert1.jpg
+	Old:  (86, 128)
+	New:  (140, 209)
 Saved image: Robin_Williams1.jpg
+	Old:  (128, 192)
+	New:  (140, 209)
 Saved image: Robin_Wright1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Rob_Lowe1.jpg
+	Old:  (45, 66)
+	New:  (140, 209)
 Saved image: Rob_Riggle1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Rob_Schneider1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Rod_Steiger1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Romain_Duris1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Error: No face found in image Ronald_Colman.jpg
 Saved image: Rooney_Mara1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Rosalind_Russell1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Rosamund_Pike1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Rosario_Dawson1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Rose_Byrne1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Error: No face found in image Roy_Scheider.jpg
 Error: No face found in image Ruby_Dee.jpg
 Saved image: Rufus_Sewell1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Russell_Brand1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Russell_Crowe1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Rutger_Hauer1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Ruth_Gordon1.jpg
+	Old:  (57, 84)
+	New:  (140, 209)
 Saved image: Ryan_Gosling1.jpg
+	Old:  (133, 198)
+	New:  (140, 209)
 Saved image: Ryan_Phillippe1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Ryan_Reynolds1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Sacha_Baron_Cohen1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Sally_Field1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Sally_Hawkins1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Sally_Kirkland1.jpg
+	Old:  (74, 110)
+	New:  (140, 209)
 Saved image: Salma_Hayek1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Samantha_Morton1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Samuel_L._Jackson1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Error: No face found in image Sam_Elliott.jpg
 Saved image: Sam_Rockwell1.jpg
+	Old:  (127, 190)
+	New:  (140, 209)
 Saved image: Sam_Waterston1.jpg
+	Old:  (139, 190)
+	New:  (140, 209)
 Saved image: Sam_Worthington1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Saved image: Sandra_Bullock1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Sandra_Oh1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Sandy_Dennis1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Saoirse_Ronan1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Saved image: Sarah_Jessica_Parker1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Sarah_Michelle_Gellar1.jpg
+	Old:  (128, 188)
+	New:  (140, 209)
 Saved image: Sarah_Polley1.jpg
+	Old:  (73, 108)
+	New:  (140, 209)
 Saved image: Scarlett_Johansson1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Sean_Astin1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Sean_Bean1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Sean_Connery1.jpg
+	Old:  (131, 192)
+	New:  (140, 209)
 Saved image: Sean_Penn1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Selena_Gomez1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Seth_Green1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Seth_MacFarlane1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Seth_Rogen1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Error: No face found in image Setsuko_Hara.jpg
 Saved image: Shah_Rukh_Khan1.jpg
+	Old:  (136, 204)
+	New:  (140, 209)
 Saved image: Shailene_Woodley1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Sharon_Stone1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Error: No face found in image Shelley_Winters.jpg
 Saved image: Shia_LaBeouf1.jpg
+	Old:  (113, 168)
+	New:  (140, 209)
 Saved image: Shirley_Booth1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Shirley_Jones1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Shirley_MacLaine1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Shirley_Temple1.jpg
+	Old:  (115, 172)
+	New:  (140, 209)
 Saved image: Shohreh_Aghdashloo1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Sidney_Poitier1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Sigourney_Weaver1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Simone_Signoret1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Saved image: Simon_Pegg1.jpg
-[ WARN:0@102.742] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Sofía_Vergara\Sofía_Vergara.jpg'): can't open/read file: check file path/integrity
+	Old:  (91, 136)
+	New:  (140, 209)
 Error: No face found in image Sissy_Spacek.jpg
 Failed to read image: Sofía_Vergara.jpg
+[ WARN:0@96.669] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Sofía_Vergara\Sofía_Vergara.jpg'): can't open/read file: check file path/integrity
 Saved image: Sophia_Loren1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Sophie_Marceau1.jpg
+	Old:  (91, 136)
+	New:  (140, 209)
 Saved image: Sophie_Okonedo1.jpg
+	Old:  (107, 160)
+	New:  (140, 209)
 Saved image: Spencer_Tracy1.jpg
-[ WARN:0@103.289] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Stellan_Skarsgård\Stellan_Skarsgård.jpg'): can't open/read file: check file path/integrity
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Stanley_Tucci1.jpg
+	Old:  (126, 209)
+	New:  (140, 209)
 Failed to read image: Stellan_Skarsgård.jpg
+[ WARN:0@97.275] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Stellan_Skarsgård\Stellan_Skarsgård.jpg'): can't open/read file: check file path/integrity
 Saved image: Stephen_Rea1.jpg
+	Old:  (79, 118)
+	New:  (140, 209)
 Saved image: Steve_Buscemi1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Steve_Carell1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Steve_Coogan1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: Steve_Martin1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Steve_McQueen1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Stockard_Channing1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Saved image: Sue_Lyon1.jpg
+	Old:  (81, 120)
+	New:  (140, 209)
 Saved image: Sung_Kang1.jpg
+	Old:  (94, 140)
+	New:  (140, 209)
 Saved image: Suraj_Sharma1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Susan_Hayward1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Susan_Sarandon1.jpg
+	Old:  (134, 130)
+	New:  (140, 209)
 Saved image: Sylvester_Stallone1.jpg
+	Old:  (123, 198)
+	New:  (140, 209)
 Saved image: Takashi_Shimura1.jpg
+	Old:  (134, 204)
+	New:  (140, 209)
 Error: No face found in image Talia_Shire.jpg
 Saved image: Taraji_P._Henson1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Taron_Egerton1.jpg
+	Old:  (44, 66)
+	New:  (140, 209)
 Saved image: Tatum_O'Neal1.jpg
+	Old:  (130, 194)
+	New:  (140, 209)
 Saved image: Taylor_Kitsch1.jpg
+	Old:  (136, 174)
+	New:  (140, 209)
 Saved image: Teresa_Palmer1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Teresa_Wright1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Teri_Garr1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Terrence_Howard1.jpg
+	Old:  (128, 150)
+	New:  (140, 209)
 Saved image: Thandiwe_Newton1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Thomas_Haden_Church1.jpg
+	Old:  (132, 188)
+	New:  (140, 209)
 Error: No face found in image Thomas_Mitchell.jpg
 Saved image: Thora_Birch1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Tilda_Swinton1.jpg
+	Old:  (126, 188)
+	New:  (140, 209)
 Saved image: Timothy_Hutton1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Timothy_Olyphant1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Tim_Allen1.jpg
+	Old:  (134, 209)
+	New:  (140, 209)
 Saved image: Tim_Curry1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Tim_Robbins1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Tim_Roth1.jpg
+	Old:  (114, 170)
+	New:  (140, 209)
 Error: No face found in image Tina_Fey.jpg
 Saved image: Tobey_Maguire1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: Tommy_Lee_Jones1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Error: No face found in image Tom_Conti.jpg
 Saved image: Tom_Courtenay1.jpg
+	Old:  (87, 181)
+	New:  (140, 209)
 Saved image: Tom_Cruise1.jpg
+	Old:  (124, 172)
+	New:  (140, 209)
 Saved image: Tom_Hanks1.jpg
+	Old:  (135, 180)
+	New:  (140, 209)
 Error: No face found in image Tom_Hardy.jpg
 Saved image: Tom_Hiddleston1.jpg
+	Old:  (39, 58)
+	New:  (140, 209)
 Saved image: Tom_Hulce1.jpg
+	Old:  (99, 148)
+	New:  (140, 209)
 Saved image: Tom_Wilkinson1.jpg
+	Old:  (112, 168)
+	New:  (140, 209)
 Saved image: Toni_Collette1.jpg
-[ WARN:0@108.508] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Toshirô_Mifune\Toshirô_Mifune.jpg'): can't open/read file: check file path/integrity
+	Old:  (113, 168)
+	New:  (140, 209)
+[ WARN:0@102.413] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Toshirô_Mifune\Toshirô_Mifune.jpg'): can't open/read file: check file path/integrity
 Saved image: Topher_Grace1.jpg
+	Old:  (92, 138)
+	New:  (140, 209)
 Failed to read image: Toshirô_Mifune.jpg
 Error: No face found in image Troy_Baker.jpg
 Saved image: Tyler_Perry1.jpg
-[ WARN:0@108.819] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Téa_Leoni\Téa_Leoni.jpg'): can't open/read file: check file path/integrity
+	Old:  (106, 158)
+	New:  (140, 209)
+[ WARN:0@102.711] global loadsave.cpp:244 cv::findDecoder imread_('./celebrities\celebrities\Téa_Leoni\Téa_Leoni.jpg'): can't open/read file: check file path/integrity
 Error: No face found in image Tyrese_Gibson.jpg
 Failed to read image: Téa_Leoni.jpg
 Saved image: Uma_Thurman1.jpg
+	Old:  (138, 204)
+	New:  (140, 209)
 Saved image: Val_Kilmer1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Vanessa_Hudgens1.jpg
+	Old:  (88, 132)
+	New:  (140, 209)
 Saved image: Vanessa_Redgrave1.jpg
+	Old:  (129, 192)
+	New:  (140, 209)
 Saved image: Van_Heflin1.jpg
+	Old:  (120, 180)
+	New:  (140, 209)
 Error: No face found in image Vera_Farmiga.jpg
 Saved image: Victor_McLaglen1.jpg
+	Old:  (122, 182)
+	New:  (140, 209)
 Saved image: Viggo_Mortensen1.jpg
+	Old:  (100, 150)
+	New:  (140, 209)
 Saved image: Vincent_Cassel1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Error: No face found in image Vincent_Gallo.jpg
 Saved image: Vince_Vaughn1.jpg
+	Old:  (42, 62)
+	New:  (140, 209)
 Saved image: Vin_Diesel1.jpg
+	Old:  (101, 150)
+	New:  (140, 209)
 Saved image: Viola_Davis1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Virginia_Madsen1.jpg
+	Old:  (109, 162)
+	New:  (140, 209)
 Error: No face found in image Vivien_Leigh.jpg
 Error: No face found in image Wallace_Beery.jpg
 Saved image: Walter_Brennan1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: Walter_Huston1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Walter_Matthau1.jpg
+	Old:  (135, 174)
+	New:  (140, 209)
 Saved image: Warner_Baxter1.jpg
+	Old:  (67, 100)
+	New:  (140, 209)
 Saved image: Warren_Beatty1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Error: No face found in image Wendy_Hiller.jpg
 Saved image: Wesley_Snipes1.jpg
+	Old:  (135, 209)
+	New:  (140, 209)
 Saved image: Whitney_Houston1.jpg
+	Old:  (119, 178)
+	New:  (140, 209)
 Saved image: Whoopi_Goldberg1.jpg
+	Old:  (136, 206)
+	New:  (140, 209)
 Saved image: Willem_Dafoe1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: William_H._Macy1.jpg
+	Old:  (134, 200)
+	New:  (140, 209)
 Saved image: William_Holden1.jpg
+	Old:  (93, 138)
+	New:  (140, 209)
 Saved image: William_Hurt1.jpg
+	Old:  (123, 184)
+	New:  (140, 209)
 Saved image: William_Powell1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: William_Shatner1.jpg
+	Old:  (105, 156)
+	New:  (140, 209)
 Saved image: Will_Ferrell1.jpg
+	Old:  (116, 174)
+	New:  (140, 209)
 Saved image: Will_Smith1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Winona_Ryder1.jpg
+	Old:  (137, 204)
+	New:  (140, 209)
 Saved image: Woody_Allen1.jpg
+	Old:  (140, 209)
+	New:  (140, 209)
 Saved image: Woody_Harrelson1.jpg
+	Old:  (134, 198)
+	New:  (140, 209)
 Saved image: Yul_Brynner1.jpg
+	Old:  (108, 162)
+	New:  (140, 209)
 Saved image: Zach_Galifianakis1.jpg
+	Old:  (102, 152)
+	New:  (140, 209)
 Saved image: Ziyi_Zhang1.jpg
+	Old:  (135, 202)
+	New:  (140, 209)
 Saved image: Zoe_Saldana1.jpg
+	Old:  (98, 146)
+	New:  (140, 209)
 Error: No face found in image Zooey_Deschanel.jpg
 
 Process finished with exit code 0

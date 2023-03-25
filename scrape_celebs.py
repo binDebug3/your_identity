@@ -206,11 +206,13 @@ def get_faces(path="./celebrities"):
 
                     # Convert the cv2 image to a pil image and resize it
                     pil_image = Image.fromarray(cv2.cvtColor(face, cv2.COLOR_BGR2RGB))
-                    resized_image = image.resize(dimensions)
+                    resized_image = pil_image.resize((dimensions[1], dimensions[0]))
 
                     # save the image
-                    pil_image.save(dirpath + "\\" + fname[:-4] + "1.jpg")
+                    resized_image.save(dirpath + "\\" + fname[:-4] + "1.jpg")
                     print("Saved image: " + fname[:-4] + "1.jpg")
+                    print("\tOld: ", pil_image.size)
+                    print("\tNew: ", resized_image.size)
                 else:
                     print("Error: No face found in image", fname)
                 break

@@ -71,7 +71,7 @@ def face_recognition(frame):
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             box = [x, y, x + w, y + h]
 
-    return frame, box
+    return frame, [box]
 
 
 
@@ -101,7 +101,13 @@ def age_gender_detector(frame):
     t = time.time()
     frameFace, bboxes = face_recognition(frame)
     for bbox in bboxes:
-        # print(bbox)
+        print("box", bbox)
+        # print everything in the next line
+        print("\tfirst:", max(0,bbox[1]-padding))
+        print("\tsecond:", min(bbox[3]+padding,frame.shape[0]-1))
+        print("\tthird:", max(0,bbox[0]-padding))
+        print("\tfourth:", min(bbox[2]+padding, frame.shape[1]-1))
+
         face = frame[max(0,bbox[1]-padding):min(bbox[3]+padding,frame.shape[0]-1),max(0,bbox[0]-padding):min(bbox[2]+padding, frame.shape[1]-1)]
 
         blob = cv2.dnn.blobFromImage(face, 1.0, (227, 227), MODEL_MEAN_VALUES, swapRB=False)
