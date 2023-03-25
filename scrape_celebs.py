@@ -3,6 +3,7 @@ import os
 import urllib.request
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import cv2
 
 
 class Celebrities(object):
@@ -112,6 +113,60 @@ class Celebrities(object):
         with open("celebrities/names.txt", "w") as file:
             for name in self.names:
                 file.write("_".join(name.split()) + "\n")
+
+# END CLASS
+
+def face_recognition(frame):
+    """takes in a frame and checks to see if a person is in that frame/image
+    it returns a boolean value representing on if their is a person in the frame
+    and the frame with the bounding box drawn around the face
+    """
+    # Convert the frame to grayscale
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+    # Detect the faces in the grayscale frame
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
+
+    detected = False
+
+    # Check if any faces are detected
+    box = []
+    if len(faces) > 0:
+
+        detected = True
+
+        # Draw rectangles around the detected face regions
+        for (x, y, w, h) in faces:
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            box = [x, y, x+w, y+h]
+
+    return detected, frame, box
+
+
+def get_faces(path="./celebrities"):
+    """Traverse the specified directory to obtain one image per subdirectory.
+    Parameters:
+        path (str): The directory containing the dataset of images.
+    Returns:
+        ((mn,k) ndarray) An array containing one column vector per
+            subdirectory. k is the number of people, and each original
+            image is mxn.
+    """
+    # Traverse the directory and get one image per subdirectory.
+    faces = []
+    for (dirpath, dirnames, filenames) in os.walk(path):
+        for fname in filenames:
+            if fname[-3:] == "jpg":  # Only get jpg images.
+                # Load the image, convert it to grayscale,
+                image = cv2.imread(dirpath + "/" + fname, as_gray=True)
+                face = face_recognition(image)
+                if face[0]:
+                    box = face[2]
+
+                break
+
+
 
 
 if __name__ == "__main__":

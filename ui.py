@@ -44,9 +44,9 @@ class App:
         self.btn_quit.pack(anchor=tk.SE, padx=5, pady=5)
         
         # get the celebrity photo
-        self.celebrity = Image.open(temp_img_path)
+        '''self.celebrity = Image.open(temp_img_path)
         self.celebrity = self.celebrity.resize(self.size)
-        self.celebrity_tk = ImageTk.PhotoImage(self.celebrity)
+        self.celebrity_tk = ImageTk.PhotoImage(self.celebrity)'''
         
         # Load the pre-trained face detection classifier
         self.face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
