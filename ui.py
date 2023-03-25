@@ -5,16 +5,20 @@ import time
 from copy import deepcopy
 from facial_recognition import get_celebrity
 from voice_interface import speak, mic_input
+import numpy as np
 
 temp_img_path = "./images/iron_man.jpeg"
 
 HEIGHT = 209
 WIDTH = 140
 
-GET_NAME_PHASE = 0
-GET_CELEBRITY_PHASE = 1
-SPEAKING_CELEBRITY_PHASE = 2
-SHOW_ADEN_PHASE = 3
+SHOW_ADEN_PHASE = 0
+GET_NAME_PHASE = 1
+GET_CELEBRITY_PHASE = 2
+SPEAKING_CELEBRITY_PHASE = 3
+GETTING_INFO_PHASE = 4
+SPEKAING_INFO_PHASE = 5
+SOMEONE_ELSE_PHASE = 6
 
 class App:
     def __init__(self, window, window_title):
@@ -62,6 +66,11 @@ class App:
         
         
         self.delay = 15 # milliseconds
+        
+        # self attributes that allow the face morph from the original image to
+        # the celebrity image
+        self.transition_alpha = 0
+        self.transition_beta = 100
             
         # a counter to keep track of time
         self.last_capture = time.perf_counter()
@@ -239,13 +248,30 @@ class App:
             celebrity_tk = ImageTk.PhotoImage(image = celebrity_img)
             self.celebrity_tk = celebrity_tk
                 
-            speak(f"{self.name}, I have analyzed your face, and I think the celebrity you look most like is " + celebrity_name[0].replace("_", " "))
-                
+            speak(
+                f"{self.name}, I have analyzed your face, "
+                "and I think the celebrity you look most like is " + 
+                celebrity_name[0].replace("_", " ")
+            )
+            
+            trans_size = (280,418)
+            user_img = curr_img.resize(trans_size)
+            celebrity_img = celebrity_img.resize(trans_size)
+            
+            user_img = np.array(user_img)
+            celebrity_img = np.array(celebrity_img)
+            
+            transition_img = cv2.addWeighted(
+                user_img, self.transition_alpha, 
+                celebrity_img, 1-self.transition_alpha, 0
+            )
+            self.transition_image = ImageTk.PhotoImage(image = Image.fromarray(transition_img))
+            
                 
             # create the celebrity image (for now just ironman)
             self.canvas.create_image(
                 self.width+self.padding*2, self.padding, 
-                image = self.celebrity_tk, anchor=tk.NW
+                image = self.transition_image, anchor=tk.NW
             )
             pass
         
