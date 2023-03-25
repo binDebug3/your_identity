@@ -117,6 +117,8 @@ class FacialRec(object):
         return np.argmin(la.norm(F - np.vstack(g), axis=0))
 
 def benj_is_the_GOAT(path = './test/'):
+
+    
     
     face = FacialRec(path)
     celeb = FacialRec()
