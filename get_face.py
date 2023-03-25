@@ -55,7 +55,7 @@ genderModel = "content/gender_net.caffemodel"
 
 # define the list of age buckets and gender that our age detector will predict.
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
-ageList = ['(0-2)', '(3-6)', '(7-12)', '(13-18)', '(19-23)', '(24-32)', '(33-43)', '(44-57)', '(58-100)']
+ageList = ['(0-2)', '(3-6)', '(7-12)', '(13-18)', '(19-22)', '(23-27)', '(28-35)', '(36-44)', '(45-57)', '(58-100)']
 genderList = ['Male', 'Female']
 
 # Load the face detection, age detection, and gender detection models
