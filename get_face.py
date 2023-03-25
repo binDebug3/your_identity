@@ -121,7 +121,6 @@ def emotion_detector(frame):
     # detect emotion
     detector = FER(mtcnn=True)
     emotions = detector.detect_emotions(frame)[0]['emotions']
-    print(emotions)
 
     return max(emotions, key=emotions.get)
 
