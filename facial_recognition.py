@@ -134,14 +134,13 @@ def benj_is_the_GOAT(path = './test/'):
 
 benj_is_the_GOAT()
 
-
-# function that takes in an image array (taken from the ui/webcam)
-# returns an image array and a string of the name of the celebrity
-
-# so I can do
-
-'''
-from facial_recognition import function
-
-celebrity_img, celebrity_name = function(image_array)
-'''
+def get_celebrity(image):
+    """takes in an image from the webcam and returns the best celebrity match
+    and their name
+    """
+    # get celebrity image
+    
+    # get celebrity name
+    
+    # return the celebrity image and name
+    return image, "name"
