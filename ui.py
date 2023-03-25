@@ -6,6 +6,9 @@ from copy import deepcopy
 
 temp_img_path = "./images/iron_man.jpeg"
 
+HEIGHT = 209
+WIDTH = 140
+
 class App:
     def __init__(self, window, window_title):
         self.window = window
@@ -57,7 +60,10 @@ class App:
         self.window.mainloop()
         
     def face_recognition(self, frame):
-        
+        """takes in a frame and checks to see if a person is in that frame/image
+        it returns a boolean value representing on if their is a person in the frame
+        and the frame with the bounding box drawn around the face
+        """
         # Convert the frame to grayscale
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         
@@ -68,18 +74,20 @@ class App:
         
         # Check if any faces are detected
         if len(faces) > 0:
-            # Take a picture and save it to a file
-            if time.perf_counter() - self.last_capture > 5:
-                detected = True
-                self.last_capture = time.perf_counter()
-                cv2.imwrite(f'images/curr_img.jpg', frame)
-                self.counter += 1
+            
+            detected = True
 
             # Draw rectangles around the detected face regions
             for (x, y, w, h) in faces:
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
                 
         return detected, frame
+    
+    def get_celebrity_look_alike(self, frame):
+        """takes in a frame and uses the SVD algorithm to find the celebrity that
+        looks most similar to the individual in this frame
+        """
+        return frame
         
         
     def update(self):
@@ -87,19 +95,21 @@ class App:
         ret, frame = self.cap.read()
         
         if ret:
-            
+            # check the frame for a detected face and return whether or not their
+            # is a person and the new_frame with the bounding box drawn
             detected, new_frame = self.face_recognition(frame)
             
+            # create an ImageTK photo object from the new_frame
+            self.photo = ImageTk.PhotoImage(image = Image.fromarray(new_frame))
+            
+            # create the live feed image
+            self.canvas.create_image(
+                self.padding, self.padding, 
+                image = self.photo, anchor = tk.NW
+            )
+            
             if detected:
-                # create a ImageTK photo object from the new_frame
-                self.photo = ImageTk.PhotoImage(image = Image.fromarray(new_frame))
                 
-                # create the live feed image
-                self.canvas.create_image(
-                    self.padding, self.padding, 
-                    image = self.photo, anchor = tk.NW
-                )
-
                 # create the celebrity image (for now just ironman)
                 self.canvas.create_image(
                     self.width+self.padding*2, self.padding, 
