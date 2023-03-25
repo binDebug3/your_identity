@@ -420,12 +420,8 @@ class App:
                         
                     
                 except Exception as e:
-<<<<<<< HEAD
                     speak("Try saying that again in a full sentence that ends with yes or no.")
-=======
-                    speak("Try saying that again like this: My name is Aden Tee")
                     self.yes_story = False
->>>>>>> d49a359de249c2e62db24d9a36f152a5b1b5242e
                     continue
                 else:
                     break
