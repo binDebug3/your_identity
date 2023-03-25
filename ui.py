@@ -8,7 +8,7 @@ from voice_interface import speak, mic_input
 import numpy as np
 from get_face import age_gender_detector, emotion_detector
 from random import randint
-from gpt3 import generate_prompt, generate_paragraph
+from gpt3 import generate_prompt, generate_paragraph, generate_good_bye
 
 from os.path import exists
 
@@ -432,7 +432,10 @@ class App:
                 f"It was great talking to you {self.name}."
             )
             
+            goodbye = generate_good_bye()
+            speak(goodbye)
             
+            speak("I would love to get to know someone else.")
             
             self.phase = SHOW_ADEN_PHASE
         
