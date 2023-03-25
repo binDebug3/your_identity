@@ -3,15 +3,16 @@ import numpy as np
 from imageio import imread
 from matplotlib import pyplot as plt
 from scipy import linalg as la
+import cv2
 
 
 def get_faces(path="./celebrities/"):
     """Traverse the specified directory to obtain one image per subdirectory. 
     Flatten and convert each image to grayscale.
-    
+
     Parameters:
-        path (str): The directory containing the dataset of images.  
-    
+        path (str): The directory containing the dataset of images.
+
     Returns:
         ((mn,k) ndarray) An array containing one column vector per
             subdirectory. k is the number of people, and each original
@@ -29,11 +30,13 @@ def get_faces(path="./celebrities/"):
                 # and flatten it into a vector.
                 img = imread(dirpath+"/"+fname, as_gray=True)
                 faces.append(np.ravel(img))
-                
+
+                # Store the name of the person and the path to the image.
                 ind_name_map[i] = (fname[:-6], dirpath+"/"+fname)
                 assert os.path.exists(ind_name_map[i][1])
                 i += 1
                 break
+
     # Put all the face vectors column-wise into a matrix.
     return np.transpose(faces), ind_name_map
 
@@ -49,6 +52,7 @@ def sample_faces(k, path="./celebrities/"):
         ((mn,) ndarray): An flattend mn-array representing a single
         image. k images are yielded in total.
     """
+
     files = []
     for (dirpath, dirnames, filenames) in os.walk(path):
         for fname in filenames:
@@ -68,7 +72,7 @@ def show(image, m=209, n=140):
         m (int): The original number of rows in the image.
         n (int): The original number of columns in the image.
     """
-    #reshape the image and show it
+    # reshape the image and show it
     image = np.reshape(image, (m, n))
     plt.imshow(image, cmap = "gray")
     
@@ -84,7 +88,7 @@ class FacialRec(object):
         U ((mn,k) ndarray): The U in the compact SVD of Fbar;
             the columns are the eigenfaces.
     """
-    # Problems 2-3
+    # initialize the class with vectors of faces
     def __init__(self, path='./celebrities/'):
         """Initialize the F, mu, Fbar, and U attributes.
         This is the main part of the computation.
@@ -97,8 +101,8 @@ class FacialRec(object):
         # get the SVD of Fbar and save U
         U, Sigma, Vh = la.svd(self.Fbar, full_matrices=False)
         self.U = U
-        
-    # Problem 3
+
+
     def project(self, A, s):
         """Project a face vector onto the subspace spanned by the first s
         eigenfaces, and represent that projection in terms of those eigenfaces.
@@ -111,7 +115,7 @@ class FacialRec(object):
         """
         return self.U[:,:s].T @ A
 
-    # Problem 5
+
     def find_nearest(self, g, s=38):
         """Find the index j such that the jth column of F is the face that is
         closest to the face image 'g'.
@@ -145,6 +149,7 @@ class FacialRec(object):
             m (int): The original number of rows in the image.
             n (int): The original number of columns in the image.
         """
+
         # find the index of the image that is the nearest
         j = self.find_nearest(image, s=s)
         name = self.ind_name_map[j]
@@ -163,14 +168,16 @@ class FacialRec(object):
         plt.title("Match")
         plt.show()
 
-def benj_is_the_GOAT(path = './test/'):
 
+def benj_is_the_GOAT(path = './test/'):
+    # get the face
     face = FacialRec('./test/')
     celeb = FacialRec()
 
-    #get location of closest face
+    # get location of closest face
     n = celeb.find_nearest(face.F[:,0])
 
+    # plot the original and the match
     plt.subplot(1,2,1)
     show(face.F[:,0])
     plt.title("Original Image")
@@ -179,24 +186,26 @@ def benj_is_the_GOAT(path = './test/'):
     plt.title("New Image")
     plt.show()
 
-#benj_is_the_GOAT()
+# benj_is_the_GOAT()
 celebrities = FacialRec('./celebrities/')
+
 
 def get_celebrity(image):
     """takes in an image from the webcam and returns the best celebrity match
     and their name
     """
+    # convert the image to grayscale and flatten it
     image = np.array(image)
     image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
     image = np.ravel(image)
-    
+
+    # get the celebrity match
     celebrity_img, celebrity_name = celebrities.match(image)
     print(celebrity_name[0])
-    
+
+    # convert the celebrity image to a PIL image
     return celebrity_img, celebrity_name
 
-import cv2
-from PIL import Image, ImageTk
 
 if __name__ == "__main__":
     pass
