@@ -5,8 +5,8 @@ if [ $# -eq 0 ]
     echo "No message supplied"
     git add .
     git commit -m "pushing"
-    git pull origin main
-    git push origin main
+    git pull -u origin main
+    git push -u origin main
 fi
 
 # if a commit message was passed in as a command-line argument
@@ -16,8 +16,8 @@ if [ $# -eq 1 ]
     # message from the command line
     git add .
     git commit -m "$1"
-    git pull origin main
-    git push origin main
+    git pull -u origin main
+    git push -u origin main
 fi
 
 

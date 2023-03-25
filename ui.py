@@ -1,6 +1,7 @@
 import cv2
 import tkinter as tk
 from PIL import Image, ImageTk
+import time
 
 temp_img_path = "./images/iron_man.jpeg"
 
@@ -9,7 +10,17 @@ class App:
         self.window = window
         self.window.title(window_title)
         
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+        
+        # Check if the camera is accessible
+        if not self.cap.isOpened():
+            print("Unable to access camera")
+            exit()
+            
+        # a counter to keep track of time
+        self.last_capture = time.perf_counter()
+        
+        # get the image size that we will be using
         self.width = self.cap.get(cv2.CAP_PROP_FRAME_WIDTH)
         self.height = self.cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
         self.size = (int(self.width), int(self.height))
