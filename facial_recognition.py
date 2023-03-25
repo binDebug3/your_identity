@@ -135,3 +135,14 @@ def benj_is_the_GOAT(path = './test/'):
     plt.show()
 
 benj_is_the_GOAT()
+
+def get_celebrity(image):
+    """takes in an image from the webcam and returns the best celebrity match
+    and their name
+    """
+    # get celebrity image
+    
+    # get celebrity name
+    
+    # return the celebrity image and name
+    return image, "name"
