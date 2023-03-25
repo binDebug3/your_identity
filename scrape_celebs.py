@@ -4,6 +4,8 @@ import urllib.request
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import cv2
+import time
+from PIL import Image
 
 
 class Celebrities(object):
@@ -122,7 +124,10 @@ def face_recognition(frame):
     and the frame with the bounding box drawn around the face
     """
     # Convert the frame to grayscale
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    try:
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    except cv2.error:
+        return False, frame, []
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
     # Detect the faces in the grayscale frame
@@ -138,8 +143,9 @@ def face_recognition(frame):
 
         # Draw rectangles around the detected face regions
         for (x, y, w, h) in faces:
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            # cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             box = [x, y, x+w, y+h]
+            break
 
     return detected, frame, box
 
@@ -159,11 +165,54 @@ def get_faces(path="./celebrities"):
         for fname in filenames:
             if fname[-3:] == "jpg":  # Only get jpg images.
                 # Load the image, convert it to grayscale,
-                image = cv2.imread(dirpath + "/" + fname, as_gray=True)
-                face = face_recognition(image)
-                if face[0]:
-                    box = face[2]
+                image = cv2.imread(dirpath + "\\" + fname)
 
+                # find the face in the image
+                face_finding = face_recognition(image)
+                if image is None:
+                    print(f"Failed to read image: {fname}")
+                    continue
+
+                dimensions = image.shape
+
+                if face_finding[0]:
+                    box = face_finding[2]
+
+                    # crop the image to the face
+                    modify = (box[2] - box[0]) // 5
+                    left = box[0] - modify
+                    right = box[2] + modify
+                    half_height = ((right - left) * 1.5) // 2
+                    vert_center = (box[1] + box[3]) // 2
+                    top = int(vert_center - half_height)
+                    bottom = int(vert_center + half_height)
+
+                    # check if the face is too close to the edge of the image
+                    if top < 0:
+                        bottom = min(bottom - top, image.shape[0])
+                        top = 0
+                    if bottom > image.shape[0]:
+                        top = max(bottom - image.shape[0], 0)
+                        bottom = image.shape[0]
+                    if left < 0:
+                        right = min(right - left, image.shape[1])
+                        left = 0
+                    if right > image.shape[1]:
+                        left = max(right - image.shape[1], 0)
+                        right = image.shape[1]
+
+                    # crop actual image
+                    face = face_finding[1][top:bottom, left:right, ::1]
+
+                    # Convert the cv2 image to a pil image and resize it
+                    pil_image = Image.fromarray(cv2.cvtColor(face, cv2.COLOR_BGR2RGB))
+                    resized_image = image.resize(dimensions)
+
+                    # save the image
+                    pil_image.save(dirpath + "\\" + fname[:-4] + "1.jpg")
+                    print("Saved image: " + fname[:-4] + "1.jpg")
+                else:
+                    print("Error: No face found in image", fname)
                 break
 
 
@@ -171,6 +220,7 @@ def get_faces(path="./celebrities"):
 
 if __name__ == "__main__":
     pass
+    get_faces()
     # celebs = Celebrities()
     # celebs.scrape()
     # celebs.save_names()

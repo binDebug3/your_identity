@@ -212,4 +212,4 @@ def get_demographics(frame):
 
 
 
-print(get_demographics(cv2.imread("images/image1.jpg")))
+print(age_gender_detector(cv2.imread("images/image1.jpg")))
