@@ -10,7 +10,7 @@ from get_face import age_gender_detector, emotion_detector
 
 from os.path import exists
 
-if exists("/d/AlexWork"):
+if exists("D:\AlexWork"):
     jeffs_cpu = True
 else:
     jeffs_cpu = False
