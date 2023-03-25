@@ -6,6 +6,7 @@ from copy import deepcopy
 from facial_recognition import get_celebrity
 from voice_interface import speak, mic_input
 import numpy as np
+from get_face import age_gender_detector
 
 temp_img_path = "./images/iron_man.jpeg"
 
@@ -16,8 +17,9 @@ SHOW_ADEN_PHASE = 0
 GET_NAME_PHASE = 1
 GET_CELEBRITY_PHASE = 2
 SPEAKING_CELEBRITY_PHASE = 3
+PHOTO_TRANSITION_PHASE = 3.5
 GETTING_INFO_PHASE = 4
-SPEKAING_INFO_PHASE = 5
+SPEAKING_INFO_PHASE = 5
 SOMEONE_ELSE_PHASE = 6
 
 class App:
@@ -176,7 +178,9 @@ class App:
             
             speak("Hello, my name is Aden Tee.")
             
-            self.name = mic_input(prompt="What is your name?")
+            
+            reply = mic_input(prompt="What is your name?")
+            self.name = reply.split()[-1]
             
             self.phase = GET_CELEBRITY_PHASE
             
@@ -239,6 +243,7 @@ class App:
             # load in the current image and resize it
             curr_img = Image.open("images/curr_img.jpg")
             curr_img = curr_img.resize((self.output_width, self.output_height))
+            self.image_for_info = deepcopy(np.array(curr_img))
             
             # get the celebrity look alike
             celebrity_img, celebrity_name = get_celebrity(curr_img)
@@ -261,22 +266,85 @@ class App:
             user_img = np.array(user_img)
             celebrity_img = np.array(celebrity_img)
             
+            self.user_img = user_img
+            self.celebrity_img = celebrity_img
+            
+            self.phase = PHOTO_TRANSITION_PHASE
+            
+        elif self.phase == PHOTO_TRANSITION_PHASE:
+            
             transition_img = cv2.addWeighted(
-                user_img, self.transition_alpha, 
-                celebrity_img, 1-self.transition_alpha, 0
+                self.user_img, (100-self.transition_alpha)/100, 
+                self.celebrity_img, (self.transition_alpha)/100, 0
             )
-            self.transition_image = ImageTk.PhotoImage(image = Image.fromarray(transition_img))
             
+            self.transition_alpha += 1
+            
+            done = False
+            if self.transition_alpha > 100:
+                done = True
                 
-            # create the celebrity image (for now just ironman)
-            self.canvas.create_image(
-                self.width+self.padding*2, self.padding, 
-                image = self.transition_image, anchor=tk.NW
-            )
-            pass
-        
-        
+            if not done:
+                self.transition_image = ImageTk.PhotoImage(image = Image.fromarray(transition_img))
+                
+                    
+                # create the celebrity image (for now just ironman)
+                self.canvas.create_image(
+                    self.width+self.padding*2, self.padding, 
+                    image = self.transition_image, anchor=tk.NW
+                )
+                
+                time.sleep(0.005)
+            else:
+                self.phase = GETTING_INFO_PHASE
+                
+        elif self.phase == GETTING_INFO_PHASE:
             
+            speak("I will now analyze your face to predict your gender, age, and mood.")
+            
+            gender, gender_confidence, age, age_confidene, emotion, emotion_confidence = age_gender_detector(self.image_for_info)
+            self.gender = gender
+            self.gender_confidence = int(gender_confidence * 100)
+            self.age = age
+            self.age_confidene = int(age_confidene * 100)
+            self.emotion = emotion
+            self.emotion_confidence = emotion_confidence
+            
+            print(gender, gender_confidence, age, age_confidene)
+            
+            self.phase = SPEAKING_INFO_PHASE
+        
+        elif self.phase == SPEAKING_INFO_PHASE:
+            
+            speak("Here is my prediction")
+            
+            speak(
+                f"I am {self.gender_confidence} percent sure that you are {self.gender}"
+            )
+            
+            # remove parenthesize int he string
+            age_str = self.age[1:-1]
+            nums = list(map(int, age_str.split("-")))
+            lower_age = nums[0]
+            higher_age = nums[1]
+            
+            speak(
+                f"I am {self.age_confidene} percent sure that you are between "
+                f"{lower_age} and {higher_age} years old)"
+            )
+            
+            speak(
+                f"I am {self.emotion_confidence} percent sure that you are {self.emotion}"
+            )
+            
+            self.canvas.delete('all')
+            
+            self.phase = SOMEONE_ELSE_PHASE
+        
+        elif self.phase == SOMEONE_ELSE_PHASE:
+            
+            speak("I hope I did a good job. Someone else should try!")
+            self.phase = SHOW_ADEN_PHASE
         
         self.window.after(self.delay, self.update)
     
