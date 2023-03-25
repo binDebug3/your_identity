@@ -118,9 +118,7 @@ class FacialRec(object):
 
 def benj_is_the_GOAT(path = './test/'):
 
-    
-    
-    face = FacialRec(path)
+    face = FacialRec('./test/')
     celeb = FacialRec()
 
     #get location of closest face

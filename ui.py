@@ -36,7 +36,8 @@ class App:
         self.canvas = tk.Canvas(
             window, 
             width = self.width*2+self.padding*4, 
-            height = self.height+self.padding*2)
+            height = self.height+self.padding*2
+        )
         self.canvas.pack()
         
         # Button to quit the application
@@ -95,6 +96,8 @@ class App:
         # Get a frame from the video source
         ret, frame = self.cap.read()
         
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        
         if ret:
             # check the frame for a detected face and return whether or not their
             # is a person and the new_frame with the bounding box drawn
@@ -106,12 +109,17 @@ class App:
             # create the live feed image
             self.canvas.create_image(
                 self.padding, self.padding, 
-                image = self.photo, anchor = tk.NW
+                image = self.photo, 
+                anchor = tk.NW
             )
             
             if detected:
                 
+                # get the celebrity look alike
                 celebrity_img, celebrity_name = get_celebrity(frame)
+                
+                celebrity_img = self.celebrity_tk
+                celebrity_name = "iron man"
                 
                 # create the celebrity image (for now just ironman)
                 self.canvas.create_image(
