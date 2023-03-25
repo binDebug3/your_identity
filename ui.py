@@ -127,15 +127,33 @@ class App:
                 # face
                 x,y,w,h = x_l,y_l,w_l,h_l
                 
-                cx = x + w//2
-                cy = y + h//2
+                box = [x, y, x+w, y+h]
                 
-                start_x = int(cx - self.output_width)
-                start_y = int(cy - self.output_height)
-                end_x = int(start_x + self.output_width*2)
-                end_y = int(start_y + self.output_height*2)
-                
-                curr_frame = curr_frame[start_y:end_y, start_x:end_x, ::-1]
+                # crop the image to the face
+                modify = (box[2] - box[0]) // 5
+                left = box[0] - modify
+                right = box[2] + modify
+                half_height = ((right - left) * 1.5) // 2
+                vert_center = (box[1] + box[3]) // 2
+                top = int(vert_center - half_height)
+                bottom = int(vert_center + half_height)
+
+                # check if the face is too close to the edge of the image
+                if top < 0:
+                    bottom = min(bottom - top, curr_frame.shape[0])
+                    top = 0
+                if bottom > curr_frame.shape[0]:
+                    top = max(bottom - curr_frame.shape[0], 0)
+                    bottom = curr_frame.shape[0]
+                if left < 0:
+                    right = min(right - left, curr_frame.shape[1])
+                    left = 0
+                if right > curr_frame.shape[1]:
+                    left = max(right - curr_frame.shape[1], 0)
+                    right = curr_frame.shape[1]
+
+                # crop actual image
+                curr_frame = curr_frame[top:bottom, left:right, ::-1]
                 
                 try:
                     # save the image
@@ -303,6 +321,7 @@ class App:
             done = False
             if self.transition_alpha > 100:
                 done = True
+                self.transition_alpha = 0
                 
             if not done:
                 self.transition_image = ImageTk.PhotoImage(image = Image.fromarray(transition_img))
@@ -320,7 +339,7 @@ class App:
                 
         elif self.phase == GETTING_INFO_PHASE:
             
-            speak("I will now analyze your face to predict your gender, age, and mood.")
+            speak("I will now analyze your face to predict your gender and age.")
             
             gender, gender_confidence, age, age_confidene = age_gender_detector(self.image_for_info)
             self.gender = gender
@@ -365,23 +384,56 @@ class App:
                     f"I am {self.emotion_confidence} percent sure that you are {self.emotion}"
                 )
             
-            self.canvas.delete('all')
-            
             self.phase = STORY_PHASE
             
         elif self.phase == STORY_PHASE:
             
-            prompt = generate_prompt(self.name, self.age, self.celerity_name)
-            story = generate_paragraph(prompt)
+            # keep asking for whether or not to hear a story until it works haha
+            while True:
+                try:
+                    reply = mic_input(prompt="Would you like to hear a story about you that I came up with?")
+                    reply = reply.split()[0]
+                    
+                    reply = "".join([c for c in reply.lower() if c.isalpha()])
+                    
+                    if reply == 'yes':
+                        self.yes_story = True
+                    elif reply == 'no' or reply == 'nah':
+                        self.yes_story = False
+                    else:
+                        self.yes_sotory = False
+                        
+                    
+                except Exception as e:
+                    speak("Try saying that again like this: My name is Aden Tee")
+                    continue
+                else:
+                    break
             
-            speak(story)
+            speak("Okay!")
+            
+            if self.yes_story:
+                
+                prompt = generate_prompt(self.name, self.gender, str(self.age), self.celerity_name)
+                story = generate_paragraph(prompt).replace("\"", "'")
+                speak("Here is the story I came up with")
+                speak(story)
             
             self.phase = SOMEONE_ELSE_PHASE
             
+            self.canvas.delete('all')
         
         elif self.phase == SOMEONE_ELSE_PHASE:
             
-            speak("I hope I did a good job. Someone else should try!")
+            if self.yes_story:
+                speak("I hope you liked my story.")
+                
+            speak(
+                f"It was great talking to you {self.name}."
+            )
+            
+            
+            
             self.phase = SHOW_ADEN_PHASE
         
         self.window.after(self.delay, self.update)
