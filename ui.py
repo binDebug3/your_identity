@@ -7,6 +7,8 @@ from facial_recognition import get_celebrity
 from voice_interface import speak, mic_input
 import numpy as np
 from get_face import age_gender_detector, emotion_detector
+from random import randint
+from gpt3 import generate_prompt, generate_paragraph
 
 from os.path import exists
 
@@ -27,6 +29,7 @@ SPEAKING_CELEBRITY_PHASE = 3
 PHOTO_TRANSITION_PHASE = 3.5
 GETTING_INFO_PHASE = 4
 SPEAKING_INFO_PHASE = 5
+STORY_PHASE = 5.5
 SOMEONE_ELSE_PHASE = 6
 
 class App:
@@ -263,6 +266,8 @@ class App:
             # get the celebrity look alike
             celebrity_img, celebrity_name = get_celebrity(curr_img)
             
+            self.celerity_name = celebrity_name[0].replace("_", " ")
+            
             celebrity_img = Image.open(celebrity_name[1])
             
             celebrity_tk = ImageTk.PhotoImage(image = celebrity_img)
@@ -347,6 +352,8 @@ class App:
             lower_age = nums[0]
             higher_age = nums[1]
             
+            self.age = randint(lower_age, higher_age)
+            
             speak(
                 f"I am {self.age_confidene} percent sure that you are between "
                 f"{lower_age} and {higher_age} years old)"
@@ -360,7 +367,17 @@ class App:
             
             self.canvas.delete('all')
             
+            self.phase = STORY_PHASE
+            
+        elif self.phase == STORY_PHASE:
+            
+            prompt = generate_prompt(self.name, self.age, self.celerity_name)
+            story = generate_paragraph(prompt)
+            
+            speak(story)
+            
             self.phase = SOMEONE_ELSE_PHASE
+            
         
         elif self.phase == SOMEONE_ELSE_PHASE:
             
