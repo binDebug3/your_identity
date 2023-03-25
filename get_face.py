@@ -1,29 +1,11 @@
-# import cv2 as cv
-#
-#
-# # Create a VideoCapture object to access the camera
-# camera_port = 0
-# camera = cv.VideoCapture(camera_port, cv.CAP_DSHOW)
-#
-# # Check if the camera is accessible
-# if not camera.isOpened():
-#     print("Unable to access camera")
-#     exit()
-#
-# # Read a frame from the camera
-# ret, frame = camera.read()
-#
-# # Release the camera resource
-# camera.release()
-#
-# # Save the captured frame to a file
-# cv.imwrite('captured_image.jpg', frame)
-
 import cv2
-import numpy as np
+import time
+
 
 # Load the pre-trained face detection classifier
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+# record the index of the image to be saved
 with open("counter.txt") as file:
     counter = int(file.read())
 
@@ -35,6 +17,7 @@ if not cap.isOpened():
     print("Unable to access camera")
     exit()
 
+last_capture = time.perf_counter()
 # Loop over the frames from the camera
 while True:
     # Read a frame from the camera
@@ -49,7 +32,10 @@ while True:
     # Check if any faces are detected
     if len(faces) > 0:
         # Take a picture and save it to a file
-        cv2.imwrite('captured_image.jpg', frame)
+        if time.perf_counter() - last_capture > 5:
+            last_capture = time.perf_counter()
+            cv2.imwrite(f'images/image{counter}.jpg', frame)
+            counter += 1
 
         # Draw rectangles around the detected face regions
         for (x, y, w, h) in faces:
@@ -67,10 +53,7 @@ cap.release()
 
 # Destroy all windows
 cv2.destroyAllWindows()
-# Save the captured frame to a file
-cv2.imwrite(f'images/image{counter}.jpg', frame)
 
-counter += 1
 
 with open("counter.txt", "w+") as file:
     file.write(str(counter))
