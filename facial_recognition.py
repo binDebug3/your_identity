@@ -4,6 +4,7 @@ from imageio import imread
 from matplotlib import pyplot as plt
 from scipy import linalg as la
 
+
 def get_faces(path="./faces94"):
     """Traverse the specified directory to obtain one image per subdirectory. 
     Flatten and convert each image to grayscale.
@@ -16,17 +17,25 @@ def get_faces(path="./faces94"):
             subdirectory. k is the number of people, and each original
             image is mxn.
     """
+    ind_name_map = {}
+    
     # Traverse the directory and get one image per subdirectory.
     faces = []
+    i = 0
     for (dirpath, dirnames, filenames) in os.walk(path):
         for fname in filenames:
             if fname[-3:]=="jpg":       # Only get jpg images.
                 # Load the image, convert it to grayscale,
                 # and flatten it into a vector.
-                faces.append(np.ravel(imread(dirpath+"/"+fname, as_gray=True)))
+                img = imread(dirpath+"/"+fname, as_gray=True)
+                faces.append(np.ravel(img))
+                
+                ind_name_map[i] = (fname[:-4], dirpath+"/"+fname)
+                assert os.path.exists(ind_name_map[i][1])
+                i += 1
                 break
     # Put all the face vectors column-wise into a matrix.
-    return np.transpose(faces)
+    return np.transpose(faces), ind_name_map
 
 
 def sample_faces(k, path="./faces94"):
@@ -62,7 +71,7 @@ def show(image, m=209, n=140):
     #reshape the image and show it
     image = np.reshape(image, (m, n))
     plt.imshow(image, cmap = "gray")
-
+    
 class FacialRec(object):
     """Class for storing a database of face images, with methods for
     matching other faces to the database.
@@ -75,17 +84,21 @@ class FacialRec(object):
         U ((mn,k) ndarray): The U in the compact SVD of Fbar;
             the columns are the eigenfaces.
     """
+    # Problems 2-3
     def __init__(self, path='./faces94'):
         """Initialize the F, mu, Fbar, and U attributes.
         This is the main part of the computation.
         """
-        #initialize all these variables
-        self.F = get_faces(path)
-        self.mu = np.mean(self.F, axis = 1)
-        self.new_F = self.F - self.mu.reshape(len(self.mu), 1)
-        #initailize U from la.svd
-        self.U = la.svd(self.new_F, full_matrices=False)[0]
-
+        # get F, compute the mean_face and compute Fbar
+        self.F, self.ind_name_map = get_faces(path=path)
+        self.mu = self.F.mean(axis=1)
+        self.Fbar = (self.F.T - self.mu).T
+        
+        # get the SVD of Fbar and save U
+        U, Sigma, Vh = la.svd(self.Fbar, full_matrices=False)
+        self.U = U
+        
+    # Problem 3
     def project(self, A, s):
         """Project a face vector onto the subspace spanned by the first s
         eigenfaces, and represent that projection in terms of those eigenfaces.
@@ -96,9 +109,9 @@ class FacialRec(object):
         Returns: 
             ((s,) ndarray): An array of the projected image of s eigenfaces.
         """
-        #return the projection
         return self.U[:,:s].T @ A
 
+    # Problem 5
     def find_nearest(self, g, s=38):
         """Find the index j such that the jth column of F is the face that is
         closest to the face image 'g'.
@@ -111,16 +124,48 @@ class FacialRec(object):
             (int): the index of the column of F that is the best match to
                    the input face image 'g'.
         """
-        #get F and g then return the argmin
-        F = self.project(self.new_F, s)
-        g = self.project(g - self.mu, s)
-        return np.argmin(la.norm(F - np.vstack(g), axis=0))
+        # get F_hat
+        F_ = self.project(self.Fbar, s)
+        
+        # get g_bar_hat
+        g_ = self.project(g-self.mu, s)
+        
+        # find argmin ||F_ - g_||_2 and return it
+        diff = (F_.T - g_).T
+        j = np.argmin(np.linalg.norm(diff, axis=0))
+        return j
+
+    # Problem 6
+    def match(self, image, s=38, m=209, n=140):
+        """Display an image along with its closest match from the dataset. 
+        
+        Parameters:
+            image ((mn,) ndarray): A flattened face image.
+            s (int): The number of eigenfaces to use in the projection.
+            m (int): The original number of rows in the image.
+            n (int): The original number of columns in the image.
+        """
+        # find the index of the image that is the nearest
+        j = self.find_nearest(image, s=s)
+        name = self.ind_name_map[j]
+        return self.F[:,j].reshape((m,n)), name
+        
+        # select the match and reshape this and the original
+        match = self.F[:,j].reshape((m,n))
+        orig = image.reshape((m,n))
+        
+        # plot the original and the matche
+        plt.subplot(1,2,1)
+        plt.imshow(orig, cmap="gray")
+        plt.title("Original")
+        plt.subplot(1,2,2)
+        plt.imshow(match, cmap="gray")
+        plt.title("Match")
+        plt.show()
 
 def benj_is_the_GOAT(path = './test/'):
 
-    
-    
-    face = FacialRec(path)
+    face = FacialRec('./test/')
     celeb = FacialRec()
 
     #get location of closest face
@@ -134,15 +179,25 @@ def benj_is_the_GOAT(path = './test/'):
     plt.title("New Image")
     plt.show()
 
-benj_is_the_GOAT()
+#benj_is_the_GOAT()
+celebrities = FacialRec('./celebrities/')
 
 def get_celebrity(image):
     """takes in an image from the webcam and returns the best celebrity match
     and their name
     """
-    # get celebrity image
+    image = np.array(image)
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    image = np.ravel(image)
     
-    # get celebrity name
+    celebrity_img, celebrity_name = celebrities.match(image)
+    print(celebrity_name[0])
     
-    # return the celebrity image and name
-    return image, "name"
+    return celebrity_img, celebrity_name
+
+import cv2
+from PIL import Image, ImageTk
+
+if __name__ == "__main__":
+    pass
+
