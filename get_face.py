@@ -94,16 +94,16 @@ def age_gender_detector(frame):
         # print("Age : {}, conf = {:.3f}".format(age, agePreds[0].max()))
 
         # detect emotion
-        detector = FER(mtcnn=True)
+        '''detector = FER(mtcnn=True)
         emotions = detector.detect_emotions(frame)[0]['emotions']
-        emotion = max(emotions, key=emotions.get)
+        emotion = max(emotions, key=emotions.get)'''
 
 
         # don't display the label or the frame
         # label = "{},{}".format(gender, age)
         # cv2.putText(frameFace, label, (bbox[0], bbox[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv2.LINE_AA)
 
-    return gender, genderPreds[0].max(), age, agePreds[0].max(), emotion, emotions[emotion]
+    return gender, genderPreds[0].max(), age, agePreds[0].max()#, emotion, emotions[emotion]
 
 
 # EMOTION DETECTION ---------------------------------------------------------------------------------------------------
