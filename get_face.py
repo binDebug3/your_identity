@@ -1,5 +1,7 @@
 import cv2 as cv
 
+with open("counter.txt") as file:
+    counter = int(file.read())
 
 # Create a VideoCapture object to access the camera
 camera_port = 0
@@ -17,4 +19,9 @@ ret, frame = camera.read()
 camera.release()
 
 # Save the captured frame to a file
-cv.imwrite('captured_image.jpg', frame)
+cv.imwrite(f'images/image{counter}.jpg', frame)
+
+counter += 1
+
+with open("counter.txt", "w+") as file:
+    file.write(str(counter))
