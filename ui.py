@@ -4,11 +4,17 @@ from PIL import Image, ImageTk
 import time
 from copy import deepcopy
 from facial_recognition import get_celebrity
+from voice_interface import speak, mic_input
 
 temp_img_path = "./images/iron_man.jpeg"
 
 HEIGHT = 209
 WIDTH = 140
+
+GET_NAME_PHASE = 0
+GET_CELEBRITY_PHASE = 1
+SPEAKING_CELEBRITY_PHASE = 2
+SHOW_ADEN_PHASE = 3
 
 class App:
     def __init__(self, window, window_title):
@@ -21,9 +27,6 @@ class App:
         if not self.cap.isOpened():
             print("Unable to access camera")
             exit()
-            
-        # a counter to keep track of time
-        self.last_capture = time.perf_counter()
         
         # get the image size that we will be using
         self.width = self.cap.get(cv2.CAP_PROP_FRAME_WIDTH)
@@ -54,10 +57,14 @@ class App:
         # Load the pre-trained face detection classifier
         self.face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         
+        # a phase that keeps track of what point we are in the UI process
+        self.phase = SHOW_ADEN_PHASE
+        
         
         self.delay = 15 # milliseconds
-        with open("counter.txt") as file:
-            self.counter = int(file.read())
+            
+        # a counter to keep track of time
+        self.last_capture = time.perf_counter()
         
         self.update()
         
@@ -129,50 +136,120 @@ class App:
         
         
     def update(self):
-        # Get a frame from the video source
-        ret, frame = self.cap.read()
         
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        
-        if ret:
-            # check the frame for a detected face and return whether or not their
-            # is a person and the new_frame with the bounding box drawn
-            detected, new_frame = self.face_recognition(frame)
+        if self.phase == SHOW_ADEN_PHASE:
             
-            # create an ImageTK photo object from the new_frame
-            self.photo = ImageTk.PhotoImage(image = Image.fromarray(new_frame))
+            # load in the aden_with_tag photo
+            self.aden_photo = Image.open("images/aden_with_tag.jpg")
+            size = self.aden_photo._size
+            dim = min(self.height - self.padding*4, self.width - self.padding*4)
+            self.aden_photo = self.aden_photo.resize((int(dim),int(dim)))
+            size = (int(dim), int(dim))
+            self.aden_tk = ImageTk.PhotoImage(self.aden_photo)
             
-            # create the live feed image
+            # display it in the centerish of the screen
+            aden_left = int(self.width // 2 - size[0] // 2)
+            aden_top = int(self.height // 2 - size[1] // 2)
+            
             self.canvas.create_image(
-                self.padding, self.padding, 
-                image = self.photo, 
-                anchor = tk.NW
+                aden_left, aden_top,
+                image=self.aden_tk, anchor=tk.NW
             )
             
-            if detected:
+            # after two seconds move on to the introduction phase
+            if time.perf_counter() - self.last_capture > 2:
+                self.phase = GET_NAME_PHASE
+                self.last_capture = time.perf_counter()
+            
+            
+        
+        elif self.phase == GET_NAME_PHASE:
+            
+            speak("Hello, my name is Aden Tee.")
+            
+            self.name = mic_input(prompt="What is your name?")
+            
+            self.phase = GET_CELEBRITY_PHASE
+            
+            speak("Let me take a look at you. Center your phase in the camera for me")
+            
+            self.last_capture = time.perf_counter()
+        
+        # after introduction we do the GET_CELEBRITY_PHASE where it pops
+        # up the live feed and finds the celebrity look-alike
+        elif self.phase == GET_CELEBRITY_PHASE:
+            
+            
+            # Get a frame from the video source
+            ret, frame = self.cap.read()
+            
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            
+            if ret:
+                # check the frame for a detected face and return whether or not their
+                # is a person and the new_frame with the bounding box drawn
+                detected, new_frame = self.face_recognition(frame)
                 
-                # load in the current image and resize it
-                curr_img = Image.open("images/curr_img.jpg")
-                curr_img = curr_img.resize((self.output_width, self.output_height))
+                # create an ImageTK photo object from the new_frame
+                self.photo = ImageTk.PhotoImage(image = Image.fromarray(new_frame))
                 
-                # get the celebrity look alike
-                celebrity_img, celebrity_name = get_celebrity(curr_img)
-                
-                celebrity_img = Image.open(celebrity_name[1])
-                
-                celebrity_tk = ImageTk.PhotoImage(image = celebrity_img)
-                self.celebrity_tk = celebrity_tk
-                
-                celebrity_img = self.celebrity_tk
-                celebrity_name = "iron man"
-                
-                print("creating image")
-                
-                # create the celebrity image (for now just ironman)
+                # create the live feed image
                 self.canvas.create_image(
-                    self.width+self.padding*2, self.padding, 
-                    image = self.celebrity_tk, anchor=tk.NW
+                    self.padding, self.padding, 
+                    image = self.photo, 
+                    anchor = tk.NW
                 )
+                
+                if detected:
+                    self.phase = SPEAKING_CELEBRITY_PHASE
+                    
+                
+        elif self.phase == SPEAKING_CELEBRITY_PHASE:
+            
+            # still display the live feed during the speaking celebrity phase
+            # Get a frame from the video source
+            ret, frame = self.cap.read()
+            
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            
+            if ret:
+                # check the frame for a detected face and return whether or not their
+                # is a person and the new_frame with the bounding box drawn
+                detected, new_frame = self.face_recognition(frame)
+                
+                # create an ImageTK photo object from the new_frame
+                self.photo = ImageTk.PhotoImage(image = Image.fromarray(new_frame))
+                
+                # create the live feed image
+                self.canvas.create_image(
+                    self.padding, self.padding, 
+                    image = self.photo, 
+                    anchor = tk.NW
+                )
+                
+            # load in the current image and resize it
+            curr_img = Image.open("images/curr_img.jpg")
+            curr_img = curr_img.resize((self.output_width, self.output_height))
+            
+            # get the celebrity look alike
+            celebrity_img, celebrity_name = get_celebrity(curr_img)
+            
+            celebrity_img = Image.open(celebrity_name[1])
+            
+            celebrity_tk = ImageTk.PhotoImage(image = celebrity_img)
+            self.celebrity_tk = celebrity_tk
+                
+            speak(f"{self.name}, I have analyzed your face, and I think the celebrity you look most like is " + celebrity_name[0].replace("_", " "))
+                
+                
+            # create the celebrity image (for now just ironman)
+            self.canvas.create_image(
+                self.width+self.padding*2, self.padding, 
+                image = self.celebrity_tk, anchor=tk.NW
+            )
+            pass
+        
+        
             
         
         self.window.after(self.delay, self.update)

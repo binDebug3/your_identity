@@ -6,7 +6,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
 
 # LISTEN
-def mic_input():
+def mic_input(prompt=None):
     """
     Takes input from the microphone and returns it as a string
     :return: (string) input from the microphone, (boolean) False if failure
@@ -14,8 +14,12 @@ def mic_input():
     try:
         r = sr.Recognizer()
         with sr.Microphone() as source:
-            print("Listening...")
+            
+            if not prompt is None:
+                speak(prompt)
+            
             r.energy_threshold = 4000
+            print("Listening...")
             audio = r.listen(source)
 
         try:
@@ -25,7 +29,7 @@ def mic_input():
         except Exception as ex:
             print(ex)
             print("Say that again please...")
-            command = mic_input()
+            command = mic_input(prompt)
         return command
     except Exception as ex:
         print(ex)
