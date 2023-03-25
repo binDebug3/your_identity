@@ -1,5 +1,14 @@
 import cv2
-from fer import FER
+
+from os.path import exists
+
+if exists("D:\AlexWork"):
+    jeffs_cpu = True
+else:
+    jeffs_cpu = False
+
+if not jeffs_cpu:
+    from fer import FER
 
 
 # FACE RECOGNITION -----------------------------------------------------------------------------------------------------
