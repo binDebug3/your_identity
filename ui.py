@@ -302,11 +302,13 @@ class App:
             
             speak("I will now analyze your face to predict your gender, age, and mood.")
             
-            gender, gender_confidence, age, age_confidene = age_gender_detector(self.image_for_info)
+            gender, gender_confidence, age, age_confidene, emotion, emotion_confidence = age_gender_detector(self.image_for_info)
             self.gender = gender
             self.gender_confidence = int(gender_confidence * 100)
             self.age = age
             self.age_confidene = int(age_confidene * 100)
+            self.emotion = emotion
+            self.emotion_confidence = emotion_confidence
             
             print(gender, gender_confidence, age, age_confidene)
             
@@ -330,6 +332,12 @@ class App:
                 f"I am {self.age_confidene} percent sure that you are between "
                 f"{lower_age} and {higher_age} years old)"
             )
+            
+            speak(
+                f"I am {self.emotion_confidence} percent sure that you are {self.emotion}"
+            )
+            
+            self.canvas.delete('all')
             
             self.phase = SOMEONE_ELSE_PHASE
         
