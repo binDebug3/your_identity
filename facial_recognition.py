@@ -133,3 +133,15 @@ def benj_is_the_GOAT(path = './test/'):
     plt.show()
 
 benj_is_the_GOAT()
+
+
+# function that takes in an image array (taken from the ui/webcam)
+# returns an image array and a string of the name of the celebrity
+
+# so I can do
+
+'''
+from facial_recognition import function
+
+celebrity_img, celebrity_name = function(image_array)
+'''
