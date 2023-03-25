@@ -211,13 +211,9 @@ def get_faces(path="./celebrities"):
                     # save the image
                     resized_image.save(dirpath + "\\" + fname[:-4] + "1.jpg")
                     print("Saved image: " + fname[:-4] + "1.jpg")
-                    print("\tOld: ", pil_image.size)
-                    print("\tNew: ", resized_image.size)
                 else:
                     print("Error: No face found in image", fname)
                 break
-
-
 
 
 if __name__ == "__main__":
