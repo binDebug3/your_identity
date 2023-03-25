@@ -124,14 +124,11 @@ def emotion_detector(frame):
     :return:    emotion (string): the emotion of the person in the image
                 emotion confidence (float): the confidence of the emotion prediction from 0 to 1
     """
-
-    # Read frame and get the face
-    # frameFace, bboxes = face_recognition(frame)
-
     # detect emotion
     detector = FER(mtcnn=True)
     emotions = detector.detect_emotions(frame)[0]['emotions']
 
+    # return emotion
     return max(emotions, key=emotions.get)
 
 if __name__ == "__main__":
