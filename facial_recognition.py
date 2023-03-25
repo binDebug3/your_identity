@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from scipy import linalg as la
 
 
-def get_faces(path="./faces94"):
+def get_faces(path="./celebrities/"):
     """Traverse the specified directory to obtain one image per subdirectory. 
     Flatten and convert each image to grayscale.
     
@@ -24,21 +24,22 @@ def get_faces(path="./faces94"):
     i = 0
     for (dirpath, dirnames, filenames) in os.walk(path):
         for fname in filenames:
-            if fname[-3:]=="jpg":       # Only get jpg images.
+            if fname[-5:]=="1.jpg":       # Only get jpg images.
                 # Load the image, convert it to grayscale,
                 # and flatten it into a vector.
                 img = imread(dirpath+"/"+fname, as_gray=True)
                 faces.append(np.ravel(img))
                 
-                ind_name_map[i] = (fname[:-4], dirpath+"/"+fname)
+                ind_name_map[i] = (fname[:-6], dirpath+"/"+fname)
                 assert os.path.exists(ind_name_map[i][1])
+                print(img.shape)
                 i += 1
                 break
     # Put all the face vectors column-wise into a matrix.
     return np.transpose(faces), ind_name_map
 
 
-def sample_faces(k, path="./faces94"):
+def sample_faces(k, path="./celebrities/"):
     """Generate k sample images from the given path.
 
     Parameters:
@@ -85,7 +86,7 @@ class FacialRec(object):
             the columns are the eigenfaces.
     """
     # Problems 2-3
-    def __init__(self, path='./faces94'):
+    def __init__(self, path='./celebrities/'):
         """Initialize the F, mu, Fbar, and U attributes.
         This is the main part of the computation.
         """
