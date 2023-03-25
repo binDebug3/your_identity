@@ -3,6 +3,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import time
 from copy import deepcopy
+from facial_recognition import get_celebrity
 
 temp_img_path = "./images/iron_man.jpeg"
 
@@ -109,6 +110,8 @@ class App:
             )
             
             if detected:
+                
+                celebrity_img, celebrity_name = get_celebrity(frame)
                 
                 # create the celebrity image (for now just ironman)
                 self.canvas.create_image(
