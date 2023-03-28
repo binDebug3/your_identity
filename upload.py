@@ -93,5 +93,5 @@ if __name__ == "__main__":
     load(path, photo)
 
     cropped = photo.split(".")[0] + "1.jpg"
-    celebrity_img, celebrity_name = get_celebrity(Image.open(path + "\\" + cropped))
+    celebrity_img, celebrity_name = get_celebrity(Image.open(path + "\\" + photo))
     print([c[0] for c in celebrity_name])

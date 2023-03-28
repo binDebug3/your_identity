@@ -137,6 +137,9 @@ class FacialRec(object):
         # find argmin ||F_ - g_||_2 and return it
         diff = (F_.T - g_).T
         j = np.argmin(np.linalg.norm(diff, axis=0))
+
+        # return the index of the top three closest faces
+        # j = np.argsort(np.linalg.norm(diff, axis=0))[:50]
         return j
 
     # Problem 6
@@ -152,8 +155,10 @@ class FacialRec(object):
 
         # find the index of the image that is the nearest
         j = self.find_nearest(image, s=s)
+        # name = [self.ind_name_map[i] for i in j]
+        # return [self.F[:,i].reshape((m,n)) for i in j], name
         name = self.ind_name_map[j]
-        return self.F[:,j].reshape((m,n)), name
+        return self.F[:, j].reshape((m, n)), name
         
         # select the match and reshape this and the original
         match = self.F[:,j].reshape((m,n))
